@@ -1,8 +1,0 @@
-{
-  "name": "CTFY - Alight Motion Presets & Assets",
-  "description": "Preset, template, platform link, TikTok video analyzer, TikTok project link finder, dan asset hub Alight Motion karya @imctfy.",
-  "requestFramePermissions": [],
-  "majorCapabilities": [
-    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
-  ]
-}

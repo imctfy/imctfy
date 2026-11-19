@@ -1,9 +1,0 @@
-# Cloudflare Workers Static Assets — hanya folder public/ yang dipublikasikan.
-# Nama Worker = ctfylink (dikonfirmasi pemilik). Jangan ubah route/domain.
-name = "ctfylink"
-compatibility_date = "2026-11-18"
-
-[assets]
-directory = "./public"
-not_found_handling = "404-page"
-# html_handling dibiarkan default (auto-trailing-slash): /library melayani library.html, /library.html dialihkan ke /library.
