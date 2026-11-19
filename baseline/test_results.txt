@@ -1,0 +1,169 @@
+# test_results — 2026-11-19 03:31:18 UTC (semua hasil = PASS-LOKAL / emulasi; BUKAN browser nyata)
+
+## build deterministik: hash 1=7c8790c33eca9110 hash 2=7c8790c33eca9110 PASS
+
+## python3 scripts/check_integrity.py
+PASS id unik /
+PASS id unik /library
+PASS id unik /tools
+PASS id unik /tentang
+PASS tepat 1 <h1> / — 1
+PASS canonical=og:url=URL halaman / — https://ctfy.my.id/
+PASS title / — 59 karakter
+PASS description / — 163 karakter
+PASS lang=id & viewport /
+PASS tepat 1 <h1> /library — 1
+PASS canonical=og:url=URL halaman /library — https://ctfy.my.id/library
+PASS title /library — 46 karakter
+PASS description /library — 127 karakter
+PASS lang=id & viewport /library
+PASS tepat 1 <h1> /tools — 1
+PASS canonical=og:url=URL halaman /tools — https://ctfy.my.id/tools
+PASS title /tools — 44 karakter
+PASS description /tools — 121 karakter
+PASS lang=id & viewport /tools
+PASS tepat 1 <h1> /tentang — 1
+PASS canonical=og:url=URL halaman /tentang — https://ctfy.my.id/tentang
+PASS title /tentang — 46 karakter
+PASS description /tentang — 142 karakter
+PASS lang=id & viewport /tentang
+PASS title unik antar-halaman
+PASS description unik antar-halaman
+PASS JSON-LD valid /
+PASS JSON-LD valid /library
+PASS JSON-LD valid /tools
+PASS JSON-LD valid /tentang
+PASS semua href/src internal ada di public/ — []
+PASS tidak ada tautan lama /?tab= — []
+PASS handler inline terselesaikan / (3 nama)
+PASS handler inline terselesaikan /library (7 nama)
+PASS handler inline terselesaikan /tools (16 nama)
+PASS handler inline terselesaikan /tentang (4 nama)
+PASS header identik di 4 halaman
+PASS footer identik di 4 halaman
+PASS bottom-nav identik di 4 halaman
+PASS skrip halaman / — tag.min.js main.js boot.js
+PASS skrip inline kecil / — terbesar 6138 byte
+PASS skrip halaman /library — tag.min.js fuse.js@7.0.0 main.js catalog.js library.js boot.js firebase-init.js
+PASS skrip inline kecil /library — terbesar 1924 byte
+PASS skrip halaman /tools — tag.min.js main.js catalog.js tools.js boot.js firebase-init.js
+PASS skrip inline kecil /tools — terbesar 1905 byte
+PASS skrip halaman /tentang — tag.min.js main.js catalog.js boot.js firebase-init.js
+PASS skrip inline kecil /tentang — terbesar 1934 byte
+PASS logo header memakai /favicon.svg /
+PASS bottom-nav 4 tab tanpa Dukung /
+PASS logo header memakai /favicon.svg /library
+PASS bottom-nav 4 tab tanpa Dukung /library
+PASS logo header memakai /favicon.svg /tools
+PASS bottom-nav 4 tab tanpa Dukung /tools
+PASS logo header memakai /favicon.svg /tentang
+PASS bottom-nav 4 tab tanpa Dukung /tentang
+PASS 404 memakai /favicon.svg
+PASS sitemap memuat 4 URL kanonik — ['https://ctfy.my.id/', 'https://ctfy.my.id/library', 'https://ctfy.my.id/tools', 'https://ctfy.my.id/tentang']
+PASS robots.txt menunjuk sitemap, tidak memblokir
+PASS 404.html ada & noindex
+PASS google verification tetap di root
+PASS README.md / metadata.json tidak publik
+PASS hanya hash-anchor yang diizinkan — {'/': {'#main-content'}, '/library': {'#main-content'}, '/tools': {'#', '#main-content'}, '/tentang': {'#main-content'}}
+
+RINGKASAN: 62 cek, 62 PASS, 0 FAIL
+exit=0
+
+## python3 scripts/verify_parity.py
+PASS CSS asli utuh byte-exact (style.css = asli + tambahan terdokumentasi)
+PASS blok JS tak-terpatch ada byte-exact di modul (275 blok)
+PASS jumlah blok JS = manifest (288)
+PASS blok terpatch terdokumentasi: buildAppUrl,initEvents,loadData,parseCurrentRoute,switchTab,updatePageTitle
+PASS semua 178 fungsi JS asli masih ada
+PASS blok init-akhir yang dihapus = 7 pemanggilan (diganti boot.js)
+PASS tidak ada fungsi terduplikasi antar-modul
+PASS teks panel platform identik dengan asli — 316 kata vs asli 316
+PASS teks panel semua identik dengan asli — 15 kata vs asli 15
+PASS teks panel tools identik dengan asli — 492 kata vs asli 492
+PASS teks panel tentang identik dengan asli — 433 kata vs asli 433
+PASS teks header identik
+PASS teks footer identik
+INFO URL asli hilang di public/ (0): []
+PASS kontak/donasi/sosial tetap ada: 628564…
+PASS kontak/donasi/sosial tetap ada: 085648…
+PASS kontak/donasi/sosial tetap ada: myxrin…
+PASS kontak/donasi/sosial tetap ada: whatsa…
+PASS kontak/donasi/sosial tetap ada: sociab…
+PASS kontak/donasi/sosial tetap ada: tiktok…
+PASS kontak/donasi/sosial tetap ada: instag…
+PASS kontak/donasi/sosial tetap ada: youtub…
+PASS kontak/donasi/sosial tetap ada: capcut…
+PASS semua 197 id statis asli masih ada di salah satu halaman
+
+RINGKASAN: 23 cek, 0 FAIL
+exit=0
+
+## node scripts/smoke_test.js
+PASS-LOKAL index.html   ok      (tanpa query)    nav=assign:/library,assign:/tools,assign:/tentang
+PASS-LOKAL index.html   offline (tanpa query)    nav=assign:/library,assign:/tools,assign:/tentang
+PASS-LOKAL library.html ok      (tanpa query)    nav=pushState:/library,assign:/tools,assign:/tentang,assign:/
+PASS-LOKAL library.html offline (tanpa query)    nav=pushState:/library,assign:/tools,assign:/tentang,assign:/
+PASS-LOKAL library.html ok      ?code=AM01       nav=pushState:/library,assign:/tools,assign:/tentang,assign:/
+PASS-LOKAL tools.html   ok      (tanpa query)    nav=assign:/library,pushState:/tools,assign:/tentang,assign:/
+PASS-LOKAL tools.html   offline (tanpa query)    nav=assign:/library,pushState:/tools,assign:/tentang,assign:/
+PASS-LOKAL tools.html   ok      ?tool=finder     nav=assign:/library,pushState:/tools?tool=finder,assign:/tentang,assign:/
+PASS-LOKAL tools.html   ok      ?tool=analyzer   nav=assign:/library,pushState:/tools?tool=analyzer,assign:/tentang,assign:/
+PASS-LOKAL tentang.html ok      (tanpa query)    nav=assign:/library,assign:/tools,pushState:/tentang,assign:/
+PASS-LOKAL tentang.html offline (tanpa query)    nav=assign:/library,assign:/tools,pushState:/tentang,assign:/
+PASS-LOKAL tentang.html ok      ?support=1       nav=assign:/library,assign:/tools,pushState:/tentang,assign:/
+SEMUA SKENARIO LOLOS (PASS-LOKAL, DOM tiruan)
+exit=0
+
+## node scripts/test_legacy_redirect.js
+PASS-LOKAL /?tab=library                      -> /library                  
+PASS-LOKAL /?tab=semua                        -> /library                  
+PASS-LOKAL /?tab=presets                      -> /library                  
+PASS-LOKAL /?tab=tools                        -> /tools                    
+PASS-LOKAL /?tab=tools&tool=finder            -> /tools?tool=finder        
+PASS-LOKAL /?tab=tools&tool=analyzer          -> /tools?tool=analyzer      
+PASS-LOKAL /?tool=finder                      -> /tools?tool=finder        
+PASS-LOKAL /?tab=tentang                      -> /tentang                  
+PASS-LOKAL /?tab=about                        -> /tentang                  
+PASS-LOKAL /?tab=dukung                       -> /tentang?support=1        
+PASS-LOKAL /?tab=platform                     -> /                         
+PASS-LOKAL /?tab=home                         -> /                         
+PASS-LOKAL /?code=AM01                        -> /library?code=AM01        
+PASS-LOKAL /?tab=library&code=AM01            -> /library?code=AM01        
+PASS-LOKAL /?id=AM01                          -> /library?code=AM01        
+PASS-LOKAL /?tab=platform&code=AM01           -> /library?code=AM01        
+PASS-LOKAL /?p=/library/AM01                  -> /library?code=AM01        
+PASS-LOKAL /?p=/tools/finder                  -> /tools?tool=finder        
+PASS-LOKAL /#library                          -> /library                  
+PASS-LOKAL /#/library                         -> /library                  
+PASS-LOKAL /#library/AM01                     -> /library?code=AM01        
+PASS-LOKAL /#code=AM01                        -> /library?code=AM01        
+PASS-LOKAL /#tab=tools&tool=finder            -> /tools?tool=finder        
+PASS-LOKAL /#finder                           -> /tools?tool=finder        
+PASS-LOKAL /#analyzer                         -> /tools?tool=analyzer      
+PASS-LOKAL /#tentang                          -> /tentang                  
+PASS-LOKAL /#dukung                           -> /tentang?support=1        
+PASS-LOKAL /#AM01                             -> /library?code=AM01        
+PASS-LOKAL /#main-content                     -> null                      
+PASS-LOKAL /?utm_source=tiktok                -> null                      
+PASS-LOKAL /                                  -> null                      
+PASS-LOKAL /index.html?tab=tools              -> /tools                    
+PASS-LOKAL /library/AM01                      -> /library?code=AM01        
+PASS-LOKAL /semua                             -> /library                  
+PASS-LOKAL /alat                              -> /tools                    
+PASS-LOKAL /alat/analyzer                     -> /tools?tool=analyzer      
+PASS-LOKAL /tools/link-finder                 -> /tools?tool=finder        
+PASS-LOKAL /about                             -> /tentang                  
+PASS-LOKAL /dukung                            -> /tentang?support=1        
+PASS-LOKAL /home                              -> /                         
+PASS-LOKAL /halaman-ngawur                    -> null                      
+PASS-LOKAL /library                           -> null                      
+SEMUA 42 KASUS LOLOS (PASS-LOKAL)
+exit=0
+
+## node --check
+OK public/assets/boot.js
+OK public/assets/catalog.js
+OK public/assets/firebase-init.js
+OK public/assets/library.js
+OK public/assets/main.js
+OK public/assets/tools.js

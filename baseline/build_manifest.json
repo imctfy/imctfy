@@ -1,0 +1,2470 @@
+{
+ "blocks": [
+  {
+   "name": "firebaseConfig",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 6213,
+   "orig_sha256": "5263ff8f33e3f4ed0cfc13c4a27331921b4e389d8f384c71754646b265e95637",
+   "patched": false
+  },
+  {
+   "name": "WA_NUMBER",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 6215,
+   "orig_sha256": "107ccb18ac574485e5c3893c12f955ad7f3902b97b12f82078bbdf44eaf97875",
+   "patched": false
+  },
+  {
+   "name": "ORDER_EMAIL",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 6216,
+   "orig_sha256": "4eaa9daab8c0d02f51dd8d0ec70602b341dfe40d595f423717f9b00923683cba",
+   "patched": false
+  },
+  {
+   "name": "WA_CHANNEL",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 6217,
+   "orig_sha256": "114b27e377248b6fff1c846eb75afecb3685ab8343d6261b7f85c8dc5bebcf3d",
+   "patched": false
+  },
+  {
+   "name": "API_URL",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 6218,
+   "orig_sha256": "d89e723f4f39280a2a92a7279f66cc54bd95685a075387f214c40a816a0e8730",
+   "patched": false
+  },
+  {
+   "name": "CACHE_KEY",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 6219,
+   "orig_sha256": "554692f78a076b422ecc4d5cbdf12af7de61fbe5f055863ad763448ec3b8f7cd",
+   "patched": false
+  },
+  {
+   "name": "CACHE_TTL",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 6220,
+   "orig_sha256": "4641f3cd9a11994511b0d52aa30eb52b0adbcac06f1222e43dcb0b34b8a1d6b5",
+   "patched": false
+  },
+  {
+   "name": "FAVORITES_KEY",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 6221,
+   "orig_sha256": "ab1fc3889fc58e9eb2c20b52596afb32de13c7d0c5418d047b336bda905668df",
+   "patched": false
+  },
+  {
+   "name": "DOWNLOADS_KEY",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 6222,
+   "orig_sha256": "19c159f0d4050611534f6c09f5ce83100b071dada544ffd9fc90c3ca9c1bd5b2",
+   "patched": false
+  },
+  {
+   "name": "ITEMS_PER_PAGE",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 6223,
+   "orig_sha256": "afc0dec499a019d05a9843022c2cfdb1bab175e594208fb0f5d2d330c22ee355",
+   "patched": false
+  },
+  {
+   "name": "lastLibrarySig",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 6224,
+   "orig_sha256": "7cdc46ea62266397b729f0094256f9c4e1a8616b2a957cc8ac8636f0e23314e7",
+   "patched": false
+  },
+  {
+   "name": "libraryDataVersion",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 6225,
+   "orig_sha256": "719ac2279e8e24bbfef96b54f74d85f6670272af77cbb74e3f1f43aab7ca60d1",
+   "patched": false
+  },
+  {
+   "name": "allItems",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 6227,
+   "orig_sha256": "917c68cbea97457609a10eccc2d71f2e391d9a9b94539b5691e38a97df4803c2",
+   "patched": false
+  },
+  {
+   "name": "currentFilter",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 6228,
+   "orig_sha256": "50a0bf41fd36113c4ef69e2af0904de9307c5111d719958404b4b74886b598ff",
+   "patched": false
+  },
+  {
+   "name": "pendingLink",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 6229,
+   "orig_sha256": "62e8108c993825a070519c0880ebf057bf8108c9833f14460205429d454ed2b0",
+   "patched": false
+  },
+  {
+   "name": "sharedQuery",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 6230,
+   "orig_sha256": "0b1e90db8f94123aadf737d23de993cc8e0e42587ab936b3326860e61f1ca39f",
+   "patched": false
+  },
+  {
+   "name": "libraryCurrentPage",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 6231,
+   "orig_sha256": "5b700721ad566f1bb8912a614565ec1e71203a52532dce54775df24987c279fa",
+   "patched": false
+  },
+  {
+   "name": "esc",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 6233,
+   "orig_sha256": "19ad9ec89674e13ec6fc9424bca7e1c043546e7ed7e69c3905101dea29fd2905",
+   "patched": false
+  },
+  {
+   "name": "sanitizeSafeUrl",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 6234,
+   "orig_sha256": "672f3c022d5afefba4d3bfbf51ee5ecac68bf9003dea19c8f46f8977a26a9c60",
+   "patched": false
+  },
+  {
+   "name": "isSafeYouTubeId",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 6248,
+   "orig_sha256": "dfd4b8f438a4c4409aad0f81583ae7a778c62307165bfafdbcdafce9f3062710",
+   "patched": false
+  },
+  {
+   "name": "isSafeNumericId",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 6249,
+   "orig_sha256": "fab7cc0e7361685da4d3042883123f4d94db10d20684066bbb86f7dcbc5ab79b",
+   "patched": false
+  },
+  {
+   "name": "escapeCssAttrVal",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 6250,
+   "orig_sha256": "45222969c9513ce5e57e0e60f1c7d8734993afc0fb49936a4d00e4e9938c98ea",
+   "patched": false
+  },
+  {
+   "name": "isComingSoon",
+   "kind": "decl",
+   "module": "catalog",
+   "orig_start": 6251,
+   "orig_sha256": "d59b5fe4cdf5fd56be5f60b90838f789cb48b1b68e196d9a2643ec65cac9daa4",
+   "patched": false
+  },
+  {
+   "name": "normalizeItem",
+   "kind": "decl",
+   "module": "catalog",
+   "orig_start": 6253,
+   "orig_sha256": "e66363dba9cd903f64dcd6bbdc40e3b73141e58e8b4e1a3679fbbc00d631aa0d",
+   "patched": false
+  },
+  {
+   "name": "isAds",
+   "kind": "decl",
+   "module": "catalog",
+   "orig_start": 6313,
+   "orig_sha256": "5b1effeb3603f53f68bec68bb4398f79a59c11ef3c9d4f962214f39ee2ab3baa",
+   "patched": false
+  },
+  {
+   "name": "isForSale",
+   "kind": "decl",
+   "module": "catalog",
+   "orig_start": 6326,
+   "orig_sha256": "62b2849c8eec40021568ece2121534cc42cf9efb9e7fe4c2910bdeb46aa3fddc",
+   "patched": false
+  },
+  {
+   "name": "getItemType",
+   "kind": "decl",
+   "module": "catalog",
+   "orig_start": 6335,
+   "orig_sha256": "51c4a9a0bb695127e802b961d07845878dd2dfeebdd64eca979c3d1023080c75",
+   "patched": false
+  },
+  {
+   "name": "isPaidPlus",
+   "kind": "decl",
+   "module": "catalog",
+   "orig_start": 6341,
+   "orig_sha256": "a0045c49311ae55aff9f652c821313fbe7a3d2172fc45c39f6ef0beb93379802",
+   "patched": false
+  },
+  {
+   "name": "getPriceLabel",
+   "kind": "decl",
+   "module": "catalog",
+   "orig_start": 6345,
+   "orig_sha256": "c3ec61b65e8384d6af5804ac8ff554a2157d77766ad46a9b8c91148e9b60a741",
+   "patched": false
+  },
+  {
+   "name": "isPaid",
+   "kind": "decl",
+   "module": "catalog",
+   "orig_start": 6355,
+   "orig_sha256": "0703a42e206b43832ae422c81090e8b19ed5373668ac38434fa5f51f09b12c22",
+   "patched": false
+  },
+  {
+   "name": "isPro",
+   "kind": "decl",
+   "module": "catalog",
+   "orig_start": 6356,
+   "orig_sha256": "15deed4cd1612a27c88e8e5d040ce8fc04b7711c690fa967bbb9ede2f1f63c01",
+   "patched": false
+  },
+  {
+   "name": "hasAds",
+   "kind": "decl",
+   "module": "catalog",
+   "orig_start": 6357,
+   "orig_sha256": "f7336e99665e7d642ff0b1473d122aa76d2117b37d4529f186995e465a370fa2",
+   "patched": false
+  },
+  {
+   "name": "hasPrice",
+   "kind": "decl",
+   "module": "catalog",
+   "orig_start": 6358,
+   "orig_sha256": "d13f0aac308eb99c827eb44e890708f8c656583f70a0790cccac73d69d0d9cd0",
+   "patched": false
+  },
+  {
+   "name": "getDownloads",
+   "kind": "decl",
+   "module": "catalog",
+   "orig_start": 6359,
+   "orig_sha256": "72ec060d8abca635723799c3ac3af03b5e140b63ff740704b566a114e453528d",
+   "patched": false
+  },
+  {
+   "name": "isNew",
+   "kind": "decl",
+   "module": "catalog",
+   "orig_start": 6371,
+   "orig_sha256": "8db8217a75f9645e90b41b2c36264846f928f0231875e4b93fc41b154c6412c6",
+   "patched": false
+  },
+  {
+   "name": "formatDate",
+   "kind": "decl",
+   "module": "catalog",
+   "orig_start": 6372,
+   "orig_sha256": "52ee918609a79f6cd75a2f95dd15c16079aaf57e2128430e38e4636cc706c87b",
+   "patched": false
+  },
+  {
+   "name": "getTrending",
+   "kind": "decl",
+   "module": "catalog",
+   "orig_start": 6373,
+   "orig_sha256": "8c0e0894764e892cc9ce20213f5a69e2e46054b7a8b6109421bab7021a0b1b0b",
+   "patched": false
+  },
+  {
+   "name": "TIKTOK_THUMB_CACHE",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 6375,
+   "orig_sha256": "2cc6f1fe1b23fedb463c1c08dd81882725053baa387ccb55ae0a6b3e06557b7f",
+   "patched": false
+  },
+  {
+   "name": "getCachedTikTokThumb",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 6376,
+   "orig_sha256": "d9f037de3ef20938f983af9c0e674498c22663502cb646e60b9531fd9133335f",
+   "patched": false
+  },
+  {
+   "name": "setCachedTikTokThumb",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 6382,
+   "orig_sha256": "a9b182a77468acd9285a922c26ac70c93215cb9d945c9476fa3e3301c340c719",
+   "patched": false
+  },
+  {
+   "name": "fetchTikTokThumbnail",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 6389,
+   "orig_sha256": "ecf9e6e852f9ef89025302ff17be945ba78a360f59b5fe0687b8aa407b46a645",
+   "patched": false
+  },
+  {
+   "name": "ANALYZED_RATIO_CACHE",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 6406,
+   "orig_sha256": "ba3e22beb470f0cb9f327483a76eae5bec75c97f36ea972e8760505aa59c2d64",
+   "patched": false
+  },
+  {
+   "name": "getCachedAnalyzedRatio",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 6407,
+   "orig_sha256": "7f833e68883d55e66f045b3d11c506f088fa9e8b8d26a2e35828a06ce241b6c5",
+   "patched": false
+  },
+  {
+   "name": "setCachedAnalyzedRatio",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 6413,
+   "orig_sha256": "21b26c8e904493f7e1806b2458effd12fe424a35abb7e6c7cd2108be59bf6fd8",
+   "patched": false
+  },
+  {
+   "name": "formatRatio",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 6421,
+   "orig_sha256": "77035e838b05be3cf1cc7c11b0554e5906f88d4a1fd77613ee02c6fce3a356e9",
+   "patched": false
+  },
+  {
+   "name": "analyzeActiveVideoBounds",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 6467,
+   "orig_sha256": "0ba1bb0ef226f8ac8e856c7d2b0676d5aefc9037a98ec7e1180468125d65e45b",
+   "patched": false
+  },
+  {
+   "name": "hasExplicitSheetRatio",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 6565,
+   "orig_sha256": "85a86e0045e246fc9258a50555a74fb071203de14edde90f409b9f8d3e45aea5",
+   "patched": false
+  },
+  {
+   "name": "markCardMediaRatio",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 6574,
+   "orig_sha256": "cee5269b8df31b1679d7c9711fc8bdf6a5a367b554fed9adcc56fbe90e7cffcd",
+   "patched": false
+  },
+  {
+   "name": "markCardMediaFailed",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 6584,
+   "orig_sha256": "61d346aeb49f5ed7c030ccaab8f526d1da924b382d40b6806d4388613b122d64",
+   "patched": false
+  },
+  {
+   "name": "onMediaImageLoaded",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 6592,
+   "orig_sha256": "d0038958cc0d1da21b25544a0484cbbef9947a5e91cfbfb6b044e0068e799e56",
+   "patched": false
+  },
+  {
+   "name": "ytFetchQueue",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 6660,
+   "orig_sha256": "ac95b4130f0e29d666fa608c6446ba6cb4e91df1da3ca08a7af36c396fd54835",
+   "patched": false
+  },
+  {
+   "name": "fetchYouTubeMetadata",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 6661,
+   "orig_sha256": "7627e0a86c51fb2bbf2d1ded77b8bd2ea53ebe0ad17756256faf2eefb5a8438e",
+   "patched": false
+  },
+  {
+   "name": "isRatioOnlyString",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 6707,
+   "orig_sha256": "5c25cb60bc2b05f29bf40c1167b64c210817674dfa3eccdf43ede7e02845ee9a",
+   "patched": false
+  },
+  {
+   "name": "parseRatioString",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 6713,
+   "orig_sha256": "ab7a4355645c66debf2734dd4f112e5210f23fdd5003be18eaef0033d5b04d64",
+   "patched": false
+  },
+  {
+   "name": "getRawMediaUrl",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 6747,
+   "orig_sha256": "a541e2b0317efaf97bb3c41cf1bf6688dae847399c11f9fe2131d83b7a21f55f",
+   "patched": false
+  },
+  {
+   "name": "detectRatio",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 6766,
+   "orig_sha256": "bf329747fc8bade40e27730671e74ee9d3f1b2ce11411e751b46e259a2deeb79",
+   "patched": false
+  },
+  {
+   "name": "parseMedia",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 6798,
+   "orig_sha256": "7ff3ef56f754e57846032c2eae2ef198e91294831f4eaab742b93b916a28f503",
+   "patched": false
+  },
+  {
+   "name": "playCardMedia",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 6888,
+   "orig_sha256": "236d076619d0314da687dda0449a1da450fe632ee9f0192336f9b7fb37d3f847",
+   "patched": false
+  },
+  {
+   "name": "renderCardMediaHtml",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 6897,
+   "orig_sha256": "785570bbe2831094b511718ddd61672223073f3126582770e85ab61575531e1c",
+   "patched": false
+  },
+  {
+   "name": "showToast",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 6936,
+   "orig_sha256": "276ab8defced47b14a97a05c0f09cf3a810b45334b4affa127fbb5e82b672189",
+   "patched": false
+  },
+  {
+   "name": "flashCopiedButton",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 6958,
+   "orig_sha256": "55de008155248e2ed4449b1dd703a27eade4a892d6697193ac2d257e29292288",
+   "patched": false
+  },
+  {
+   "name": "setActiveCardHighlight",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 6981,
+   "orig_sha256": "0a701d886d9765d283d6a98d790a632a0b318754770e015ee7071e0d1a587609",
+   "patched": false
+  },
+  {
+   "name": "motionRevealObserver",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 6991,
+   "orig_sha256": "e0c8761dce065349683682482c3801001275e6fb7ba1faf3b338ddb90be76c92",
+   "patched": false
+  },
+  {
+   "name": "prefersReducedMotion",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 6992,
+   "orig_sha256": "56492a140b3eb0f4f848e4723803a066f7654ab574d951d1d05d4f6481a508d0",
+   "patched": false
+  },
+  {
+   "name": "initMotionReveals",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 6996,
+   "orig_sha256": "563c248c8ba094dadf7cec96e7e2401a727dc10c928c7b5d53a8a88c09fef5cc",
+   "patched": false
+  },
+  {
+   "name": "observeMotionReveals",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 7011,
+   "orig_sha256": "008c4a7703fa87e38175e16b4d23863684829a1239a3f7d3e4a6eb27407c0e8e",
+   "patched": false
+  },
+  {
+   "name": "showError",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 7049,
+   "orig_sha256": "bb87e853482ce79970ebcf1f9fee8715a2dc6ce740bbbca385cf8bb254c0a7cb",
+   "patched": false
+  },
+  {
+   "name": "hideError",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 7050,
+   "orig_sha256": "e75c20f035ba1b9b52fec97283b2185f33a0c91b515ed30856a247e9533a0bfe",
+   "patched": false
+  },
+  {
+   "name": "triggerLogoPopAnimation",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 7052,
+   "orig_sha256": "a323748bf0575a5eb7510d6753333392cfff1875c097de9939a222b24f6a32cb",
+   "patched": false
+  },
+  {
+   "name": "triggerLogoPopAnimation",
+   "kind": "winassign",
+   "module": "main",
+   "orig_start": 7062,
+   "orig_sha256": "6218b94130f5a816ed5d2b36cf3832fe178036c1177dd47fc5dba3fff38d6913",
+   "patched": false
+  },
+  {
+   "name": "TAG_MAP",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 7064,
+   "orig_sha256": "044abc0c17e51b75e5012ed6f6169fe1d463028ddf72a052a761d480c4fe2399",
+   "patched": false
+  },
+  {
+   "name": "getTags",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 7071,
+   "orig_sha256": "080ceffc2502428b958236ceb959913bdf3c77a664ddf2d84829e6a53add9a6f",
+   "patched": false
+  },
+  {
+   "name": "safeCopyToClipboard",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 7079,
+   "orig_sha256": "9890c615c50d80bee12e7669832bb89707b106a34794f8003792416c34dbbc9b",
+   "patched": false
+  },
+  {
+   "name": "safeCopyToClipboard",
+   "kind": "winassign",
+   "module": "main",
+   "orig_start": 7134,
+   "orig_sha256": "7d18ba177547e81fd1becc732dd6ee4c15d664b06b0be4c67bcd01da185d6367",
+   "patched": false
+  },
+  {
+   "name": "copyCode",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 7136,
+   "orig_sha256": "aefd65332900b1707279aac886102665c5793bd97f2a53ea0035d99a3fc0fddc",
+   "patched": false
+  },
+  {
+   "name": "waitForFB",
+   "kind": "decl",
+   "module": "catalog",
+   "orig_start": 7141,
+   "orig_sha256": "2b926a42fe789b24d9131515369c31e15f2b78b56fca59c9bafbb94ec3fdca68",
+   "patched": false
+  },
+  {
+   "name": "incrementFB",
+   "kind": "decl",
+   "module": "catalog",
+   "orig_start": 7151,
+   "orig_sha256": "7ca8246821f839e9164ccbca5c72365f5de56721d37821b6c5c6df1216583d91",
+   "patched": false
+  },
+  {
+   "name": "applyDownloadsUpdate",
+   "kind": "decl",
+   "module": "catalog",
+   "orig_start": 7167,
+   "orig_sha256": "fcff5cfe56072961e32709819ba2665a32874699a7678ae92882435e5763898a",
+   "patched": false
+  },
+  {
+   "name": "fbUnsub",
+   "kind": "decl",
+   "module": "catalog",
+   "orig_start": 7219,
+   "orig_sha256": "5ab3a9101a428332ad86367161867bdc681142de5598d2608e85c1316bc08674",
+   "patched": false
+  },
+  {
+   "name": "listenFBDownloads",
+   "kind": "decl",
+   "module": "catalog",
+   "orig_start": 7220,
+   "orig_sha256": "03183381e6b8a49961a8d09d4f814b5108a2ee3cd6db00c41680bbf4fcace513",
+   "patched": false
+  },
+  {
+   "name": "fallbackGetDocs",
+   "kind": "decl",
+   "module": "catalog",
+   "orig_start": 7246,
+   "orig_sha256": "0c73298b2db6b1095fc0623fa56fb5b7fb7be824ff3ddab43b3ba8c647edcdb3",
+   "patched": false
+  },
+  {
+   "name": "loadFavorites",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7258,
+   "orig_sha256": "4d85fc3b87e84fee0120c9d7f8c70c9a9e2598fca257c198453ace095a37d960",
+   "patched": false
+  },
+  {
+   "name": "saveFavorites",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7259,
+   "orig_sha256": "cbe64f497de46ce48e79e90c6a6c0fee0630e20a6252166de2c232ed4f0e2c63",
+   "patched": false
+  },
+  {
+   "name": "isFav",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7260,
+   "orig_sha256": "172f06d6fec0e50bdbcc0cb6c13cd5b68d9b8bf2a3d3a2acbb6a290d9d711065",
+   "patched": false
+  },
+  {
+   "name": "syncFavButtons",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7261,
+   "orig_sha256": "3ecd3d98a78414d93912a7d2ce1448533afe2f0c121f6a21b85cb81f4d489e46",
+   "patched": false
+  },
+  {
+   "name": "toggleFav",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7273,
+   "orig_sha256": "d290b6f5edec02a42985ccb946c9395327ff7b037bc155172b74b65aa57a627c",
+   "patched": false
+  },
+  {
+   "name": "initFuse",
+   "kind": "decl",
+   "module": "catalog",
+   "orig_start": 7295,
+   "orig_sha256": "cbd2c85fd6729be0249630c12d2eadf1febf12fcae94f63bfa19aab3f56f5c47",
+   "patched": false
+  },
+  {
+   "name": "basicSearch",
+   "kind": "decl",
+   "module": "catalog",
+   "orig_start": 7299,
+   "orig_sha256": "e3771f0915e4333217703bacfce0b0773aa3f79d7a7f654f43e72c61cc7051a6",
+   "patched": false
+  },
+  {
+   "name": "searchItems",
+   "kind": "decl",
+   "module": "catalog",
+   "orig_start": 7303,
+   "orig_sha256": "1cad89e4f90bf617ef1d3d57c58832854e4a93695de177fdef8b1ab77e723000",
+   "patched": false
+  },
+  {
+   "name": "renderFeatured",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7311,
+   "orig_sha256": "648459d6859933c53cf1c9fab05f3861c0877346b453485380a52d11319f704c",
+   "patched": false
+  },
+  {
+   "name": "renderPaidGrid",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7355,
+   "orig_sha256": "1967d7aa6a916e9ef019b38cfa54ce824f78d39f9203f39e6238d14f8c911d3c",
+   "patched": false
+  },
+  {
+   "name": "LibraryMasonry",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7390,
+   "orig_sha256": "46a557527d04e64ed3c78f3dfa266b24592d4bbff6030dfc72e0ff33f99d22dd",
+   "patched": false
+  },
+  {
+   "name": "renderLibraryMedia",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7480,
+   "orig_sha256": "1bc803e6247c428f80bb13ff4b61becc53339ba526348d87489d251a949c003a",
+   "patched": false
+  },
+  {
+   "name": "renderLibraryCardHtml",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7487,
+   "orig_sha256": "b9c42c30309dd50d4c6548677b072a550d46dc80173dfad2d5b15608605f26ba",
+   "patched": false
+  },
+  {
+   "name": "renderLibraryPagination",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7524,
+   "orig_sha256": "b8fb7851a2a7552688399ca635394dc453a1af24c14926b405fd9c14702b501b",
+   "patched": false
+  },
+  {
+   "name": "renderCurrentPage",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7561,
+   "orig_sha256": "133fb15896f011300c5227384939c588fa51982323486b06877c18d17e096822",
+   "patched": false
+  },
+  {
+   "name": "renderGrid",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7613,
+   "orig_sha256": "f2f6e465c43b15e429f7b4c28b93cee5a5213fb505a728e4bef4cecf2f933762",
+   "patched": false
+  },
+  {
+   "name": "changeLibraryPage",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7619,
+   "orig_sha256": "4a9d5a58c87f5445cd0019f1b20048187ac6b404ce3ec03dbd617bf02aae6ae1",
+   "patched": false
+  },
+  {
+   "name": "applyFilters",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7626,
+   "orig_sha256": "610f4f72bc46c8f8e5218b523d0c345bcb1b644f5d7c9eec2862955dc92acff0",
+   "patched": false
+  },
+  {
+   "name": "updateStats",
+   "kind": "decl",
+   "module": "catalog",
+   "orig_start": 7698,
+   "orig_sha256": "41622562cda78a3e95c9f2aaaafe94e794e12902e594fd28e1e895ba2af57097",
+   "patched": false
+  },
+  {
+   "name": "filterByCategory",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7721,
+   "orig_sha256": "dd12a31c233395cf745e4adea7b94db2205098b697d2bb6da661c40c7eb24d65",
+   "patched": false
+  },
+  {
+   "name": "renderFooterExtras",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7736,
+   "orig_sha256": "c0ae6adc81fb93c92680d4f17734942312ec84004846872a34064d513661d542",
+   "patched": false
+  },
+  {
+   "name": "renderAll",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7752,
+   "orig_sha256": "160a063c8d35499551fa97fe4be6d27046a7db2397c5f8dbdea2ff8b4dd9f2c8",
+   "patched": false
+  },
+  {
+   "name": "resetFilters",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7753,
+   "orig_sha256": "3a1f2f1120e03dda397cd3f1d6fde8ab96fc7a2f99ad41150f31bd7a462bc239",
+   "patched": false
+  },
+  {
+   "name": "waCloseTimer",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7763,
+   "orig_sha256": "a98c6e6a2e9998e998d1b1b7bf64b39e56f822e9fbb7167eb7b1208b8977ea65",
+   "patched": false
+  },
+  {
+   "name": "showWAPopup",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7764,
+   "orig_sha256": "47368be9dfb5235d9b97bd6f5dda0366b8a53ad125726ef235b207e10c6ccf95",
+   "patched": false
+  },
+  {
+   "name": "hideWAPopup",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7778,
+   "orig_sha256": "6c860f15dacdac9201a3f9fd5eb47a29d52600bf5fc246e28d53c40d6473a0f6",
+   "patched": false
+  },
+  {
+   "name": "waPopupOverlayEl",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7791,
+   "orig_sha256": "817bab4b924683976057956562e653f2edeb81fec16e1d26d73e48061a3d191c",
+   "patched": false
+  },
+  {
+   "name": "currentModalSlide",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 7798,
+   "orig_sha256": "8f51b236e9a04cad9ef544576c0b5ce4292d0d9c231722f3fd20b1f4abd7b5bc",
+   "patched": false
+  },
+  {
+   "name": "setModalSlide",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7800,
+   "orig_sha256": "e503a84ea0747314923f695f8b8e1ac45e14822efe164e0f3e4edcaa63de957e",
+   "patched": false
+  },
+  {
+   "name": "modalTouchStartX",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7864,
+   "orig_sha256": "bc2ca7dc069dadcf6cda88d0f0a190d2e9091ede315c8528fcc5f2f344b55418",
+   "patched": false
+  },
+  {
+   "name": "modalTouchStartY",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7865,
+   "orig_sha256": "2679ab709a320f46faa8df87485c76b052c2e94caad6ee1dbb70be9413d9d9e0",
+   "patched": false
+  },
+  {
+   "name": "modalTouchEndX",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7866,
+   "orig_sha256": "2eecf1943f7343c9e664ea01ad8f081c8b6ef4eddd8855177296b76842019f92",
+   "patched": false
+  },
+  {
+   "name": "modalTouchEndY",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7867,
+   "orig_sha256": "4ba5c47563a60ab58bdb830026d0e8a7806e2c6d442922a9b7734ddaa4203b40",
+   "patched": false
+  },
+  {
+   "name": "initModalSwipeGestures",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7869,
+   "orig_sha256": "87806807c17510d2a75ddf6a23a843a9f396aacb313ece10edc839a8435c9c50",
+   "patched": false
+  },
+  {
+   "name": "handleModalSwipe",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7889,
+   "orig_sha256": "588cd4248bbf5e823ad614ba4c271cc311e57caea1c80762fd4effd97906833d",
+   "patched": false
+  },
+  {
+   "name": "renderPreviewSlide",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7910,
+   "orig_sha256": "858d4c2c0112c6e1f25782b449bbec35239675692c5e85f211e3077f8f29a3ae",
+   "patched": false
+  },
+  {
+   "name": "renderOrderSlide",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 7983,
+   "orig_sha256": "bf60c54e8fcd90517226bfe39ba321cdbf73048345e9bf16a32d838e78f4cece",
+   "patched": false
+  },
+  {
+   "name": "renderModalLinks",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 8068,
+   "orig_sha256": "c20b1da8ef1c21fa2eb747521ccbb85228d8f770aedf56f8a490c5fd529e50f2",
+   "patched": false
+  },
+  {
+   "name": "handleLinkClick",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 8194,
+   "orig_sha256": "29d8590044d2326eb7fde6911aefdb092c20abbecddaa92e6e3c18d08b3d2414",
+   "patched": false
+  },
+  {
+   "name": "handleAdClick",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 8205,
+   "orig_sha256": "a0fce0ffe4377ca577902e8decd65b698dce7da103616499a4c5ef3471d4e9d0",
+   "patched": false
+  },
+  {
+   "name": "openModal",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 8215,
+   "orig_sha256": "149914e9bdf173b5ad631a5b0921c2c0fdd17b80f1f849ea7af54534d20a41f4",
+   "patched": false
+  },
+  {
+   "name": "pendingCardCode",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 8298,
+   "orig_sha256": "64a6692a427589187e8ee4ca0218aae4950affe9cdf7753cff6d94f081d45e3b",
+   "patched": false
+  },
+  {
+   "name": "openModalByCode",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 8300,
+   "orig_sha256": "0759ffb2be702cd1365223e99faacaf2e1b41f236fe69cbc9b3d65c6116b9280",
+   "patched": false
+  },
+  {
+   "name": "modalCloseTimer",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 8319,
+   "orig_sha256": "7153658ce55fc8131efd0beacd626bebd2b2b22200b1b1cac4abd55dae388a30",
+   "patched": false
+  },
+  {
+   "name": "closeModal",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 8320,
+   "orig_sha256": "2e8574e94f8faf301f77f36e99cdb7326f20471a008157c47f8ffe022086824b",
+   "patched": false
+  },
+  {
+   "name": "copyAssetLink",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 8394,
+   "orig_sha256": "ac8e40389e75defaed1766736c77ab7bb25363d3a2b7a325f52f439fb9e9589e",
+   "patched": false
+  },
+  {
+   "name": "shareAsset",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 8402,
+   "orig_sha256": "b2d426c072201fb08e415deddb9d47ee80fc78d5c5219ee10cd035abec172e21",
+   "patched": false
+  },
+  {
+   "name": "paintDownloadCount",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 8414,
+   "orig_sha256": "b6ff399ba32b35ef96ebb554dc6f88afb4256187cd8346a39fd14f381236b0e6",
+   "patched": false
+  },
+  {
+   "name": "trackDownload",
+   "kind": "decl",
+   "module": "library",
+   "orig_start": 8432,
+   "orig_sha256": "98db73e7e6c98e71f14e0d97b5bee9eded43ae3493043f89b552ee22258b7f69",
+   "patched": false
+  },
+  {
+   "name": "fetchAPI",
+   "kind": "decl",
+   "module": "catalog",
+   "orig_start": 8463,
+   "orig_sha256": "fa45a2beae6419144cb017ec86d4f7a29a7e3175e7998b496dc637963dc0b95a",
+   "patched": false
+  },
+  {
+   "name": "getCachedData",
+   "kind": "decl",
+   "module": "catalog",
+   "orig_start": 8500,
+   "orig_sha256": "cdc96e427088f31f1043b95ac459fce40956685fc1bb9d61a89cc80b44d69d3c",
+   "patched": false
+  },
+  {
+   "name": "setCachedData",
+   "kind": "decl",
+   "module": "catalog",
+   "orig_start": 8501,
+   "orig_sha256": "3de60c26c4abec9a62c2cf4dc9c5ac3085bcbdfe7287e518d88f2dee877c24aa",
+   "patched": false
+  },
+  {
+   "name": "loadData",
+   "kind": "decl",
+   "module": "catalog",
+   "orig_start": 8503,
+   "orig_sha256": "436687185aa0cf90fcd41e7e4d40bf6bf68180ae2b5c087896249971a8c4d934",
+   "patched": true
+  },
+  {
+   "name": "updateMetaDescription",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 8547,
+   "orig_sha256": "800107fd733d749d4e29118d716fa759e40bb949851dd3cd6a37b25864829a34",
+   "patched": false
+  },
+  {
+   "name": "updatePageTitle",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 8552,
+   "orig_sha256": "9c9e7552799fe456939bc3ba900c6532664ed57051ded92cfc57b046694be512",
+   "patched": true
+  },
+  {
+   "name": "getCanonicalTab",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 8582,
+   "orig_sha256": "269fddb398b18f67c2d8bc3bd4503bc5098e590e0a174f11982e8e51de50fa3a",
+   "patched": false
+  },
+  {
+   "name": "buildAppUrl",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 8592,
+   "orig_sha256": "f3916ccf70d0c875a6cdbcb752ce1e1e71c2b0e8557b94c5c3585157e58f1f06",
+   "patched": true
+  },
+  {
+   "name": "parseCurrentRoute",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 8618,
+   "orig_sha256": "8719fdd2afd08469a1c15f6f1d55841e0ae64cbe4943bc149d69ca98418fa2e2",
+   "patched": true
+  },
+  {
+   "name": "handleRouteFromLocation",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 8746,
+   "orig_sha256": "2494c1e654fcef88179a02a580bcb804c72a895ae77ee56af32fb7771ad2490b",
+   "patched": false
+  },
+  {
+   "name": "openAssetFromURL",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 8776,
+   "orig_sha256": "375e122ec7a97785017db48b0c0f5f4200e6801ea3c458e0d4df1045bf328281",
+   "patched": false
+  },
+  {
+   "name": "switchTab",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 8789,
+   "orig_sha256": "306ffec9b79c99c24b3c7b9bdbc15cdfd2411c04b746a15502e4fda73d9931ca",
+   "patched": true
+  },
+  {
+   "name": "scrollAboutSection",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 8871,
+   "orig_sha256": "aca81d7913c1fbd7a8663f955bab67a1f3073d1279d021110d1a9c8abe4d769e",
+   "patched": false
+  },
+  {
+   "name": "initAboutFaq",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 8885,
+   "orig_sha256": "1b375c2544c5df68e14c2f579d2053fdb80b151f32c7f68e84516e8b370ca03f",
+   "patched": false
+  },
+  {
+   "name": "toggleAboutFaq",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 8889,
+   "orig_sha256": "4995c847f8b467503bdb854180bfa1463358e54ceb728ef2ec6679f96afc8a5c",
+   "patched": false
+  },
+  {
+   "name": "setupTouchSafeChipScroll",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 8903,
+   "orig_sha256": "70d67c23cff42626ae7e2a9eabbe6b401b702d634fce92ff166ce99ad7ca2d1a",
+   "patched": false
+  },
+  {
+   "name": "initPlatformFilter",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 8967,
+   "orig_sha256": "c3800c447944c18b11ed89bb7bd7426f14aab297f06f53076c3e5eb517b95795",
+   "patched": false
+  },
+  {
+   "name": "copyPlatformLink",
+   "kind": "winassign",
+   "module": "main",
+   "orig_start": 9018,
+   "orig_sha256": "ca6c2b500a30ce6efc8f6390b1c076494287c570ba28b30347977175bd543d96",
+   "patched": false
+  },
+  {
+   "name": "toggleToolDesc",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 9023,
+   "orig_sha256": "9329a7d7aefe7462ee0e688ebf8a0f8244369a96d610f9600fbf32c78d6a734c",
+   "patched": false
+  },
+  {
+   "name": "toggleToolDesc",
+   "kind": "winassign",
+   "module": "main",
+   "orig_start": 9049,
+   "orig_sha256": "1cda1a7e54595f3ed045cce0c5af1f15ab40d7885001c34e76a859efb43e2d21",
+   "patched": false
+  },
+  {
+   "name": "syncThemeMeta",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 9051,
+   "orig_sha256": "dd990680c7ee735283abbdef07f4cab267dc6d1774010f9e1c82a9d8b769a213",
+   "patched": false
+  },
+  {
+   "name": "initTheme",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 9056,
+   "orig_sha256": "8ba6d1daa2f9d778625044edc794f2d91c6b9e8c13b5c0b074574f185e7fa642",
+   "patched": false
+  },
+  {
+   "name": "handleDelegatedAction",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 9092,
+   "orig_sha256": "2c1e53ec33fa4392860e97aaaf6eebdac9ed0d6bcf16dd3c2f4f9a5937852d2a",
+   "patched": false
+  },
+  {
+   "name": "initEvents",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 9124,
+   "orig_sha256": "fab4edd5bde2ceae591bfebe73d8b5d34ffaed3dca11c0e7e75b5cc659d869d2",
+   "patched": true
+  },
+  {
+   "name": "supportCloseTimer",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 9204,
+   "orig_sha256": "77f757793e4296be936e25fb00785d729d9340060ac99cfac25a3a8229023fcb",
+   "patched": false
+  },
+  {
+   "name": "toggleSupportPopup",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 9205,
+   "orig_sha256": "07a368f9179ae46424aafaf3070a0f88ece3c77f80a321aed087c9ce1767cc2a",
+   "patched": false
+  },
+  {
+   "name": "copyDanaNumber",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 9227,
+   "orig_sha256": "2cf9d89b6f6ee9f0ab8a2fbae5246f3221b07616e1f8999420b41226a3033db6",
+   "patched": false
+  },
+  {
+   "name": "lastAnalysisData",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 9263,
+   "orig_sha256": "0852a95a474b93449120d57e9994efe6e6063b9ba2c23e838a4f4f00e02b3b41",
+   "patched": false
+  },
+  {
+   "name": "lastLocalVideoObjectUrl",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 9264,
+   "orig_sha256": "91adc0881b188ce63a32315aec43cdff95db85e31fb50cb852f0b3532c38c2cf",
+   "patched": false
+  },
+  {
+   "name": "GALLERY_AVATAR_DATA_URI",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 9265,
+   "orig_sha256": "39ee5bca6162ace795f2460b7a3d6f525ac2d30db4f566a1c7ea3f5dcd8fab90",
+   "patched": false
+  },
+  {
+   "name": "calcGcd",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 9267,
+   "orig_sha256": "470a621367b436d58756ecd071b92d8eff88f9268e1153ef59ec0e7203abd9cd",
+   "patched": false
+  },
+  {
+   "name": "getSimplifiedRatio",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 9271,
+   "orig_sha256": "4b53fef828fc27e7a0239e8dd666bddf82488916db1bb3fb415855de030ce415",
+   "patched": false
+  },
+  {
+   "name": "switchAnalyzerMode",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 9277,
+   "orig_sha256": "0ca8b29759a87e1e514d91ea1b9f2ec1b32f52601507cbc4cd54f68f141a2430",
+   "patched": false
+  },
+  {
+   "name": "extractMp4MetadataFromBuffer",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 9318,
+   "orig_sha256": "64ab544a17efbf71470f169bec888728a71ee38f80e3a768ea26815964d6beb1",
+   "patched": false
+  },
+  {
+   "name": "formatFps",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 9448,
+   "orig_sha256": "2376e517009221c588c05c8320ddcd77694b21903ff5fe6028cf58441e7f1afd",
+   "patched": false
+  },
+  {
+   "name": "probeVideoWithFps",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 9523,
+   "orig_sha256": "2674770a72f96d55357e35d8f1531dce5ec18c02111dc658428ef2af1c9ccdc5",
+   "patched": false
+  },
+  {
+   "name": "probeVideoDimensions",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 9589,
+   "orig_sha256": "d5e4b279869694d0ab781533ba9923429d9cce35dc3b613f6ccecbc917bcb7dd",
+   "patched": false
+  },
+  {
+   "name": "probeImageDimensions",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 9593,
+   "orig_sha256": "715045ded0936fe49cd02cd622c6926280d14ea70fba5c58de039b9d04289f89",
+   "patched": false
+  },
+  {
+   "name": "buildVideoAnalysisData",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 9629,
+   "orig_sha256": "f10b3561880d8ca9cb54bfa87979efc64e9ce68ba1ea6c399e10fc50cf357e5c",
+   "patched": false
+  },
+  {
+   "name": "initVideoAnalyzer",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 9797,
+   "orig_sha256": "92b0d617955697090070d334c1d6ef45fb112a35b590f3061cb37b0d4ce43da8",
+   "patched": false
+  },
+  {
+   "name": "clearUrlInput",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 9835,
+   "orig_sha256": "34aac79ec7f8469ecb0a085e000fcb3c4ca45fcf36398bfd93981b33ad295769",
+   "patched": false
+  },
+  {
+   "name": "pasteFromClipboard",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 9845,
+   "orig_sha256": "0697b2e16d6090ed212ad56516d8e8385c8f1d39c783b52402a8f661a04fe14b",
+   "patched": false
+  },
+  {
+   "name": "handleLocalVideoSelect",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 9870,
+   "orig_sha256": "e40ce851b450cc285e2fe2905400d695b897db42f5bc6aed68d10a6839c1ec67",
+   "patched": false
+  },
+  {
+   "name": "analyzeLocalVideoFile",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 9876,
+   "orig_sha256": "7ac08c25b1c7e22f58bec95234eca435f49206ce886d27bc6559d456805716f0",
+   "patched": false
+  },
+  {
+   "name": "triggerAnalyze",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 9963,
+   "orig_sha256": "9cf298dc39ba17c6b3a7104323592f582412f19e61b127e3742dfc5f602224b6",
+   "patched": false
+  },
+  {
+   "name": "renderTikTokAnalysis",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10136,
+   "orig_sha256": "accc1f0ae3b3f736036b802852eafe18e958d517966ca28541d210f2036ec3d3",
+   "patched": false
+  },
+  {
+   "name": "renderChecklistFromAnalysis",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10391,
+   "orig_sha256": "f81555dbeb6a9c26ec46ba5a7addd55cf631fec3b378c952eb970e67e9a2fd27",
+   "patched": false
+  },
+  {
+   "name": "resetUrlAnalyzer",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10439,
+   "orig_sha256": "b95e3308b0d7ad7f4cf5e204ea21236e1397a8f07de07bd8bfb95e9e2e5e3210",
+   "patched": false
+  },
+  {
+   "name": "copyAnalysisSummary",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10466,
+   "orig_sha256": "83613bb0b8bf87f8ce4eff241695c62cce845fc2e5318821ac7048777d963d95",
+   "patched": false
+  },
+  {
+   "name": "currentToolsSubTab",
+   "kind": "decl",
+   "module": "main",
+   "orig_start": 10496,
+   "orig_sha256": "8fc7414337ba369d8e086dfacd9475c7907fe3b200c3812145edc1133f1816a8",
+   "patched": false
+  },
+  {
+   "name": "currentFinderInputMode",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10497,
+   "orig_sha256": "fdba09c1faa90b394bc9ba6e2de0dc52002f2c30fe1957fd52aa6388c11145d3",
+   "patched": false
+  },
+  {
+   "name": "isFinderRunning",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10498,
+   "orig_sha256": "aced42335c7edf9598e9e9840833081ac029e452323df4c5fb201d856aedbd9c",
+   "patched": false
+  },
+  {
+   "name": "switchToolsSubTab",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10500,
+   "orig_sha256": "4db6527f22d53f35372a3bf6026d8c1366b510eb2ed98e123ea1a65ba3ae45eb",
+   "patched": false
+  },
+  {
+   "name": "SAVED_AM_PROJECTS_KEY",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10548,
+   "orig_sha256": "c090f256972fe9525c1a0a90b5991a25b043fc1be0e495e4b37fce3731b33e9d",
+   "patched": false
+  },
+  {
+   "name": "FINDER_HISTORY_KEY",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10549,
+   "orig_sha256": "450cdc00c1eb73729b7d5bc649eed0727604b3dd045a7d8b95044b219776fde5",
+   "patched": false
+  },
+  {
+   "name": "FINDER_CACHE_PREFIX",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10550,
+   "orig_sha256": "eaee38bda8337c124ca183ac44b6b34bab6fc08f49bf6afdfa38b11b2986d13d",
+   "patched": false
+  },
+  {
+   "name": "getSavedAmProjects",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10552,
+   "orig_sha256": "ce980f0946cef7b2ec289ff0ef7af568713a41f87e6c1f5796eb56908c8bf205",
+   "patched": false
+  },
+  {
+   "name": "updateSavedAmBadge",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10563,
+   "orig_sha256": "85817a6478b498638836ae2244f35ac4a62b52c4f0108d9e2ab5281f50f3f9d5",
+   "patched": false
+  },
+  {
+   "name": "saveAmProjectToStorage",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10571,
+   "orig_sha256": "b5ba0520b0081ac8ea90a04858542bbc0ab4d8ff0398c969308debf969ea4f0b",
+   "patched": false
+  },
+  {
+   "name": "removeSavedAmProject",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10617,
+   "orig_sha256": "59edd688b7f2a0217544791d3acf41c2d9247ee5f9b9b59d395ce033c3015de9",
+   "patched": false
+  },
+  {
+   "name": "clearAllSavedAmProjects",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10628,
+   "orig_sha256": "49f55f4cf97645af91d967ada431cd8de39e5c73031c684590bbb4259262c92f",
+   "patched": false
+  },
+  {
+   "name": "copyAllSavedAmProjects",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10644,
+   "orig_sha256": "cd69c6d417003f555f91c3efedd7b21491c57a72bd4b89799d9035102839953c",
+   "patched": false
+  },
+  {
+   "name": "exportSavedAmProjects",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10654,
+   "orig_sha256": "d9763bbb9a96461d3438e3f2e3b79142aa313876c3d52cad126d832c4df6f145",
+   "patched": false
+  },
+  {
+   "name": "importSavedAmProjectsPrompt",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10674,
+   "orig_sha256": "15dc89d85448ebca17fb5defbc6c6c3fc7afe92acbf832d1c7b107be47a813ba",
+   "patched": false
+  },
+  {
+   "name": "toggleManualAddAmForm",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10707,
+   "orig_sha256": "8b7c65702f19e9e5b0fae0eb106ec2401e885a1b10668e52b26266e0e906191e",
+   "patched": false
+  },
+  {
+   "name": "submitManualAmProject",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10722,
+   "orig_sha256": "97c471366c634ffa33c2e6f5e86b84870f29e053c7f188dc80d23f137c944dd9",
+   "patched": false
+  },
+  {
+   "name": "filterSavedAmProjects",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10746,
+   "orig_sha256": "2894b6721e3e43b8e1b903a167317ed05201d79a51ccda8b6454b83c406744f4",
+   "patched": false
+  },
+  {
+   "name": "renderSavedAmProjects",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10750,
+   "orig_sha256": "feae3af7897041b5ff9aa2b28a67a9551b0675307847cdcbfcfdc4f2242fa115",
+   "patched": false
+  },
+  {
+   "name": "saveToFinderHistory",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10801,
+   "orig_sha256": "097f8f850373daba1a725b45a20f08a31f8eb7bb8df4ea0b9baedf6a29cc4ed9",
+   "patched": false
+  },
+  {
+   "name": "getFinderHistory",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10832,
+   "orig_sha256": "299231370c169178922ea3e11588a40d3d7958b6b6564d89dd45f174a796880c",
+   "patched": false
+  },
+  {
+   "name": "renderFinderHistoryChips",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10839,
+   "orig_sha256": "b89ae21e8b49ce2753406703a88fdb0581060b49744cb532f7e30c5e008fbc6e",
+   "patched": false
+  },
+  {
+   "name": "loadFinderHistoryItem",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10858,
+   "orig_sha256": "19585c09add804acbcf1355529302a0f5c11f6660acca2434d1da4c65fc63eaf",
+   "patched": false
+  },
+  {
+   "name": "handleSaveAmToLocalStorage",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10871,
+   "orig_sha256": "46da17f7fd403040b1738860765b2e7a5b2003e8288dfe84b8bfe341b13f64f4",
+   "patched": false
+  },
+  {
+   "name": "pasteFromClipboardAndExtract",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10881,
+   "orig_sha256": "e15060d12dd20950aa5b50574f07d7ce7df6bac0300eac42259dd1e04495e5e6",
+   "patched": false
+  },
+  {
+   "name": "triggerFinderManualParse",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10885,
+   "orig_sha256": "a027e57af936eaf3e335eaddffef80698be9093aa1e3ad6e9d99c63e97c716f9",
+   "patched": false
+  },
+  {
+   "name": "filterCtfyPresetsFinder",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10889,
+   "orig_sha256": "1d6bcd339d1d6dc3f6072ab3aa13d19c883e9215cce851f2c7de13079a1e607d",
+   "patched": false
+  },
+  {
+   "name": "renderCtfyPresetsFinder",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10893,
+   "orig_sha256": "ed231e421154908ddec237f8349f268dc49fa12561c2f97e4eebfc154a7908ff",
+   "patched": false
+  },
+  {
+   "name": "switchFinderInputMode",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10961,
+   "orig_sha256": "766fd4065eabaf015a197d945b1a4f04873d0dbed17da2b1cbdb3cfdbd1e8813",
+   "patched": false
+  },
+  {
+   "name": "clearFinderUrlInput",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10967,
+   "orig_sha256": "a4324a3c4b6156b639212a6abb7636f48f622cf5f85235d76d72dd1815a71e30",
+   "patched": false
+  },
+  {
+   "name": "pasteFinderFromClipboard",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10977,
+   "orig_sha256": "8fa48bfa916b684c2c83a548fab59e094ed9dd2e82e9a38c4fc407bacc1f915b",
+   "patched": false
+  },
+  {
+   "name": "escapeHtml",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 10997,
+   "orig_sha256": "4b7d0e87db24d2c264e96ba910c58748a07c31b3f91615d067f0a48b99bfb444",
+   "patched": false
+  },
+  {
+   "name": "normalizeTikTokInput",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 11008,
+   "orig_sha256": "d0cf00637fec1301885ca88bea7fac1261bdf48134099646cf00962849a24361",
+   "patched": false
+  },
+  {
+   "name": "isValidTikTokUrl",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 11013,
+   "orig_sha256": "efe14692da278dcda463bfb2c4d4df6ee967231dcb41877389268f402c2e0f3c",
+   "patched": false
+  },
+  {
+   "name": "extractCleanUrlsFromText",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 11027,
+   "orig_sha256": "2445262e9f1044d40f4c12e6210187cebeb9444efec1f060b751503258127002",
+   "patched": false
+  },
+  {
+   "name": "categorizeUrl",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 11127,
+   "orig_sha256": "985caa2537e41111b78e8f3eb7e2d158b2552c7f1f23c1bf0cdcf70ce63bf518",
+   "patched": false
+  },
+  {
+   "name": "getCategoryDisplayMeta",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 11170,
+   "orig_sha256": "bfa17babb68b9c5e92a0c5d5094a4246a2c5ac286072b06d41d668a97e0e9811",
+   "patched": false
+  },
+  {
+   "name": "processAndGroupUrls",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 11197,
+   "orig_sha256": "1b4ba431a572e0188a4fff6f241c1653fa91056c6e2fe503bc0081900e5d6429",
+   "patched": false
+  },
+  {
+   "name": "showFinderError",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 11225,
+   "orig_sha256": "56e6e0d70b69f6a0d2071477e1ebea035c50c5902696f1ce0e61e04b011463f5",
+   "patched": false
+  },
+  {
+   "name": "hideFinderError",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 11240,
+   "orig_sha256": "333d5fa4e6831f41be2379228f331e2faa889550e4757d2ee01c1f7e0dd9c36e",
+   "patched": false
+  },
+  {
+   "name": "setFinderLoading",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 11245,
+   "orig_sha256": "567e86f24852dea7845cfec1d3cbc7a12178b880b85817dbbff6f7710a0192f0",
+   "patched": false
+  },
+  {
+   "name": "renderFinderResults",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 11267,
+   "orig_sha256": "71b8e4fc0ef74b0839925b050c32d52bee8483130d608bb2b988e6b76b5efa51",
+   "patched": false
+  },
+  {
+   "name": "currentFinderActiveQuery",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 11374,
+   "orig_sha256": "c42436c0429abce274c85f9e84b18982807e193760bcfe4abe8f3b13407a207d",
+   "patched": false
+  },
+  {
+   "name": "triggerFinderAnalyze",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 11376,
+   "orig_sha256": "e9c39ec8810939a904b8366d6f79062459c7ab40492728f2747241341b202d1b",
+   "patched": false
+  },
+  {
+   "name": "copyFinderUrl",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 11609,
+   "orig_sha256": "ff3a96e510215c8fb38a09892d31add04da8e1e7a904b60c5afe6d36d2d4fdcb",
+   "patched": false
+  },
+  {
+   "name": "resetFinderTool",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 11618,
+   "orig_sha256": "ef6b5b7c43628e1f2f6327402b8feef370bd32f41c7bc154e00d3fb407d95f2e",
+   "patched": false
+  },
+  {
+   "name": "initFinderTool",
+   "kind": "decl",
+   "module": "tools",
+   "orig_start": 11627,
+   "orig_sha256": "13143bb0f97a27e303f00b6e41cee6b07383016535340566bea36cbe59cef4ec",
+   "patched": false
+  },
+  {
+   "name": "initVideoAnalyzer",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11637,
+   "orig_sha256": "03062e4647eba59858d9e6876e267175c4a1960aa9f2eb195ff5f7ba1e98b96d",
+   "patched": false
+  },
+  {
+   "name": "triggerAnalyze",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11638,
+   "orig_sha256": "c9f5dfe61429b7d4b99ba3b37d140b20c5991898423bfe47f2f2be48e4d67fb7",
+   "patched": false
+  },
+  {
+   "name": "switchAnalyzerMode",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11639,
+   "orig_sha256": "65774a940e53a6e6a0b22588af340d721489b786fc93882f3f7c40c979a25ce5",
+   "patched": false
+  },
+  {
+   "name": "handleLocalVideoSelect",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11640,
+   "orig_sha256": "2bfff086f1a2e5b79e11eb66ff967c9c256c3bf15c9c9c04f881f11d4b9ad086",
+   "patched": false
+  },
+  {
+   "name": "analyzeLocalVideoFile",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11641,
+   "orig_sha256": "9a092f58a9a23770a6ad34adfc68fb72a80ef92ebade35556290dc0659514848",
+   "patched": false
+  },
+  {
+   "name": "clearUrlInput",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11642,
+   "orig_sha256": "41ce0a7e1b2f18177776e5e52f5d801a273b45eaf02114bc5bffb1da040e3e08",
+   "patched": false
+  },
+  {
+   "name": "pasteFromClipboard",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11643,
+   "orig_sha256": "2f30ace418fefd12ee97c67985b5a95cfd9563a0c1c318c796bf502c12d4ad93",
+   "patched": false
+  },
+  {
+   "name": "resetUrlAnalyzer",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11644,
+   "orig_sha256": "d20c6a675628740ef37d88ba68ea439b545e23a043427b6b1e279b0201ebeefc",
+   "patched": false
+  },
+  {
+   "name": "copyAnalysisSummary",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11645,
+   "orig_sha256": "e414bcaef212421b125c11616cf4fb697b9514f39b080ef9385b4a7382e59ed3",
+   "patched": false
+  },
+  {
+   "name": "switchToolsSubTab",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11646,
+   "orig_sha256": "994c491edd3c71a3e4d935e0c7933fba5fb4f681f8292f21f1c717427470840d",
+   "patched": false
+  },
+  {
+   "name": "openTool",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11647,
+   "orig_sha256": "6a693af89e4196c91cc69a39cd5b5c2f9269bae50dff0be67150974df28a7686",
+   "patched": false
+  },
+  {
+   "name": "switchFinderInputMode",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11648,
+   "orig_sha256": "885d8b980de8371a05674c6eb6f0b57f46f32a3ce13c135993fdae00f16caf0e",
+   "patched": false
+  },
+  {
+   "name": "clearFinderUrlInput",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11649,
+   "orig_sha256": "07deb9d2a55e594be194dd84a293a56e6693060b393d372729e13e0a6918a5e0",
+   "patched": false
+  },
+  {
+   "name": "pasteFinderFromClipboard",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11650,
+   "orig_sha256": "6ea273b181d8b4802814794270784407c0b1ac0e90f2e4095d388b974d550c6e",
+   "patched": false
+  },
+  {
+   "name": "triggerFinderAnalyze",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11651,
+   "orig_sha256": "a2410b67e90c377cfd00224da45cc0a4395d9a322a4866e2fb30efe32bfc5994",
+   "patched": false
+  },
+  {
+   "name": "triggerFinderManualParse",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11652,
+   "orig_sha256": "d5e806ad2721b05e1d07b90b953654d12b744e7f5370b68d14f4ac980133b6cb",
+   "patched": false
+  },
+  {
+   "name": "copyFinderUrl",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11653,
+   "orig_sha256": "6236ba00097b429e07bafd9eaab6c6d306ad0c3b11eec4ae274842ce5bce7ed4",
+   "patched": false
+  },
+  {
+   "name": "resetFinderTool",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11654,
+   "orig_sha256": "a15b2d9a4ebe2f22997958ea47c6a6f4df3e1cf8620d9a316c73dbe40ab1771b",
+   "patched": false
+  },
+  {
+   "name": "initFinderTool",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11655,
+   "orig_sha256": "763492cae1e0d8488ed5baeaddbc19755baa50584768d6d6f3ea8bdc1095f9a3",
+   "patched": false
+  },
+  {
+   "name": "saveAmProjectToStorage",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11656,
+   "orig_sha256": "27d899f35bf7c21be34be0f3c193ac1b3e03b249eac3bc72c9aa3529b0b00a47",
+   "patched": false
+  },
+  {
+   "name": "removeSavedAmProject",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11657,
+   "orig_sha256": "9e81b461add816b22d8b0bbefd6d97471a8b2361b410a317c84852ea75041149",
+   "patched": false
+  },
+  {
+   "name": "clearAllSavedAmProjects",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11658,
+   "orig_sha256": "64232508441febc9ebbc983542e0992cb99b144a501f74f3b16a6224aee5e378",
+   "patched": false
+  },
+  {
+   "name": "copyAllSavedAmProjects",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11659,
+   "orig_sha256": "9cf1f0bc06d1e2b149c62a85822fbc313372998039a9c2ffc8fd222fbe73b721",
+   "patched": false
+  },
+  {
+   "name": "exportSavedAmProjects",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11660,
+   "orig_sha256": "5921f51f3f91f10f306a1800e5428de83c62a504e62dfac357661b11f4b66008",
+   "patched": false
+  },
+  {
+   "name": "importSavedAmProjectsPrompt",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11661,
+   "orig_sha256": "ef6df90334b79e1897b8299cda09552c862896cb3e3979491551481b6374e1c5",
+   "patched": false
+  },
+  {
+   "name": "toggleManualAddAmForm",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11662,
+   "orig_sha256": "580798531ea838126ac29bec4fe007068552e6df7a2b2d7ef754b98d40f9da03",
+   "patched": false
+  },
+  {
+   "name": "submitManualAmProject",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11663,
+   "orig_sha256": "ab5ba825fe6c1915bcfce4fb950ed08194bc8fe0d462c07ccc2c447cc6e8ed55",
+   "patched": false
+  },
+  {
+   "name": "filterSavedAmProjects",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11664,
+   "orig_sha256": "ceb2baa73f24cb1260e4f09d895d7bd08340df9bd27fe92955ae5258f22d4062",
+   "patched": false
+  },
+  {
+   "name": "renderSavedAmProjects",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11665,
+   "orig_sha256": "6e51b2b675886359c637d1dcaaef43275082f3b34353ecfda83643d12a778ca4",
+   "patched": false
+  },
+  {
+   "name": "handleSaveAmToLocalStorage",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11666,
+   "orig_sha256": "b8da986fbd32c659d2cb7177a4ae54814e686efdaed48726f9baf488624eb6fd",
+   "patched": false
+  },
+  {
+   "name": "pasteFromClipboardAndExtract",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11667,
+   "orig_sha256": "41c0cee2c3fe59201242a45310df2dd430e681b7f2bb808b1dee60ce4780d340",
+   "patched": false
+  },
+  {
+   "name": "filterCtfyPresetsFinder",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11668,
+   "orig_sha256": "9093eec532469351fd637e89198cbc514ea4ab96dada0ab4d5fc936c35a80fad",
+   "patched": false
+  },
+  {
+   "name": "renderCtfyPresetsFinder",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11669,
+   "orig_sha256": "7de2a933c65cbda4c745fd47b78d1cf347fc4ef6e5741b5036cf8e839a1eb4b9",
+   "patched": false
+  },
+  {
+   "name": "loadFinderHistoryItem",
+   "kind": "winassign",
+   "module": "tools",
+   "orig_start": 11670,
+   "orig_sha256": "aba5ab27e06382da1f6d18271e5a720584e95b17766b04dc883a70dc2f5d8022",
+   "patched": false
+  },
+  {
+   "name": "openModal",
+   "kind": "winassign",
+   "module": "library",
+   "orig_start": 11671,
+   "orig_sha256": "4bf75a1ec13c9340a5daef8ca2bd7f82d2568aed0100b57e7a0a5fe6d3b69b76",
+   "patched": false
+  },
+  {
+   "name": "openModalByCode",
+   "kind": "winassign",
+   "module": "library",
+   "orig_start": 11672,
+   "orig_sha256": "45fc79b90786c5205b3b2d885a8d3b9094b6d64e73e9ad4f237855c721a357cd",
+   "patched": false
+  },
+  {
+   "name": "closeModal",
+   "kind": "winassign",
+   "module": "library",
+   "orig_start": 11673,
+   "orig_sha256": "837f6587a3c1ec4f78249b0d74be905af1962bd5b8c85d6f7e9a5b147210d260",
+   "patched": false
+  },
+  {
+   "name": "toggleFav",
+   "kind": "winassign",
+   "module": "library",
+   "orig_start": 11674,
+   "orig_sha256": "5aec792b9843a5341a6ccef13d95d5021680fd7633c804893c0d747c99d7a72c",
+   "patched": false
+  },
+  {
+   "name": "copyAssetLink",
+   "kind": "winassign",
+   "module": "library",
+   "orig_start": 11675,
+   "orig_sha256": "de5974196f4a6a0e83447fc49ccb9077a010ed53b52f82405e0dbfef651ce4e9",
+   "patched": false
+  },
+  {
+   "name": "shareAsset",
+   "kind": "winassign",
+   "module": "library",
+   "orig_start": 11676,
+   "orig_sha256": "dddd19663eb50a115672385e2fad798ce8e031dedf1d5baaa1c3994eb12e591d",
+   "patched": false
+  },
+  {
+   "name": "resetFilters",
+   "kind": "winassign",
+   "module": "library",
+   "orig_start": 11677,
+   "orig_sha256": "7c2b0533a9252a95bc450e6869321f458da1ce04d352210c2b560f4d136af688",
+   "patched": false
+  },
+  {
+   "name": "trackDownload",
+   "kind": "winassign",
+   "module": "library",
+   "orig_start": 11678,
+   "orig_sha256": "fed934ce8e281ea89388f49fa47b1527d4bf05580d1d75b05b0abc264670bb12",
+   "patched": false
+  },
+  {
+   "name": "copyCode",
+   "kind": "winassign",
+   "module": "main",
+   "orig_start": 11679,
+   "orig_sha256": "14c39550af846d3f46252830af831bfb20adca687a7eefaee2805c4359d3367c",
+   "patched": false
+  },
+  {
+   "name": "handleAdClick",
+   "kind": "winassign",
+   "module": "library",
+   "orig_start": 11680,
+   "orig_sha256": "96a7015d8dee1d14d58c9ec12f622aaa9cf97878a6693a303e2386bbfd140462",
+   "patched": false
+  },
+  {
+   "name": "handleLinkClick",
+   "kind": "winassign",
+   "module": "library",
+   "orig_start": 11681,
+   "orig_sha256": "cfcf6e6283f8e914686e983daadc932553b204f058dd48f0aaf0d80517c38ed3",
+   "patched": false
+  },
+  {
+   "name": "loadData",
+   "kind": "winassign",
+   "module": "catalog",
+   "orig_start": 11682,
+   "orig_sha256": "35386c2143a85ac8970313916efe362a99112e4442566a6edff233bfcda34aa1",
+   "patched": false
+  },
+  {
+   "name": "switchTab",
+   "kind": "winassign",
+   "module": "main",
+   "orig_start": 11683,
+   "orig_sha256": "8f52ef718a148690700d02f869509fd39a49287f64691cd454cb3a25f136ce13",
+   "patched": false
+  },
+  {
+   "name": "toggleSupportPopup",
+   "kind": "winassign",
+   "module": "main",
+   "orig_start": 11684,
+   "orig_sha256": "a6a031bd3b740cf97b5c9199a20421f34d23a53b0b4cf594835183b180fe9c43",
+   "patched": false
+  },
+  {
+   "name": "handleRouteFromLocation",
+   "kind": "winassign",
+   "module": "main",
+   "orig_start": 11685,
+   "orig_sha256": "748401ba0a6ff0dbcd7db16781f6bfef05e9beadd0e92708b8302ed0c13663aa",
+   "patched": false
+  },
+  {
+   "name": "parseCurrentRoute",
+   "kind": "winassign",
+   "module": "main",
+   "orig_start": 11686,
+   "orig_sha256": "e7cdb76da4b9819daee8fcfa7571ba5758358729f4fd6a2256d739f62b585b12",
+   "patched": false
+  },
+  {
+   "name": "buildAppUrl",
+   "kind": "winassign",
+   "module": "main",
+   "orig_start": 11687,
+   "orig_sha256": "3e411a08c64ed89304cba953b5d6112251b6d204922455a83e5b3dd8e68abd72",
+   "patched": false
+  },
+  {
+   "name": "copyDanaNumber",
+   "kind": "winassign",
+   "module": "main",
+   "orig_start": 11688,
+   "orig_sha256": "0802cc79ee6060a97a94654ba1cc1a6c2d9ad177927c974cb9b9d82f6c23349d",
+   "patched": false
+  },
+  {
+   "name": "scrollAboutSection",
+   "kind": "winassign",
+   "module": "main",
+   "orig_start": 11689,
+   "orig_sha256": "efaa0bc8386db0f962fae7ea6b2d53e4916b4a6b7ff5da0566659735b2537a09",
+   "patched": false
+  },
+  {
+   "name": "toggleAboutFaq",
+   "kind": "winassign",
+   "module": "main",
+   "orig_start": 11690,
+   "orig_sha256": "272f5dec22a4ca0bdd585b970c08702d240f4bbe9e1857ca13000f2cf4be7b3b",
+   "patched": false
+  },
+  {
+   "name": "changeLibraryPage",
+   "kind": "winassign",
+   "module": "library",
+   "orig_start": 11691,
+   "orig_sha256": "9e9cf1bf1f14c9e480b69a44ec47f70e390a504d63d183e141760a93883bf3e9",
+   "patched": false
+  },
+  {
+   "name": "initTheme",
+   "kind": "stmt",
+   "module": "drop",
+   "orig_start": 11693,
+   "orig_sha256": "11a35aa9a248811af65bf25eb22196cbd70620a5a08689ada9c0d8b9ca9097e9",
+   "patched": false
+  },
+  {
+   "name": "initMotionReveals",
+   "kind": "stmt",
+   "module": "drop",
+   "orig_start": 11694,
+   "orig_sha256": "84f5560ede7deb4bdaca51dfe6e5340be79ffac7d6d63c53b623e32269ed29a3",
+   "patched": false
+  },
+  {
+   "name": "loadFavorites",
+   "kind": "stmt",
+   "module": "drop",
+   "orig_start": 11695,
+   "orig_sha256": "7684009538e082b1b4af297825e811edfbd5eb5227000a39918a4ce6f9a5ca78",
+   "patched": false
+  },
+  {
+   "name": "initEvents",
+   "kind": "stmt",
+   "module": "drop",
+   "orig_start": 11696,
+   "orig_sha256": "02d9f7bf09d7b190c0824f532254ebec109b4c688836c3911ac4ac8d24800428",
+   "patched": false
+  },
+  {
+   "name": "initVideoAnalyzer",
+   "kind": "stmt",
+   "module": "drop",
+   "orig_start": 11697,
+   "orig_sha256": "e3d859ad64dc48a6c029561e58cb09d78f4a392d422993db2b47e87f3beb7018",
+   "patched": false
+  },
+  {
+   "name": "initFinderTool",
+   "kind": "stmt",
+   "module": "drop",
+   "orig_start": 11698,
+   "orig_sha256": "36782ebf8b3222b11d03fc67a854b53f6f31f5bce680587d8db2dacefad067a0",
+   "patched": false
+  },
+  {
+   "name": "loadData",
+   "kind": "stmt",
+   "module": "drop",
+   "orig_start": 11700,
+   "orig_sha256": "21787b84a9ae87a127a088d1a5092840f048802f4ec802872cc69429b7ebb26e",
+   "patched": false
+  }
+ ],
+ "patches": [
+  [
+   "P01",
+   "buildAppUrl",
+   "URL berbasis ?tab= diganti clean URL per halaman"
+  ],
+  [
+   "P02",
+   "parseCurrentRoute",
+   "parser rute SPA diganti parser berbasis halaman"
+  ],
+  [
+   "P03",
+   "switchTab",
+   "switchTab berpindah halaman bila tab tujuan bukan halaman aktif"
+  ],
+  [
+   "P04",
+   "updatePageTitle",
+   "judul/deskripsi dinamis per-tab diganti metadata statis per halaman"
+  ],
+  [
+   "P05",
+   "initEvents",
+   "guard null untuk #modal (tidak ada di halaman non-Library)"
+  ],
+  [
+   "P06",
+   "initEvents",
+   "listener klik .nav-item dihapus (anchor menavigasi sendiri)"
+  ],
+  [
+   "P07",
+   "loadData",
+   "render pasca-muat lewat hook yang sadar halaman"
+  ],
+  [
+   "P08",
+   "loadData",
+   "guard null #cardGrid"
+  ],
+  [
+   "P09",
+   "loadData",
+   "guard null #cardGrid"
+  ]
+ ],
+ "stubs": {
+  "platform": [
+   "applyFilters",
+   "closeModal",
+   "copyFinderUrl",
+   "handleAdClick",
+   "handleLinkClick",
+   "hideWAPopup",
+   "initModalSwipeGestures",
+   "loadData",
+   "markCardMediaFailed",
+   "onMediaImageLoaded",
+   "openModalByCode",
+   "renderAll",
+   "renderCtfyPresetsFinder",
+   "resetFilters",
+   "saveAmProjectToStorage",
+   "setModalSlide",
+   "switchToolsSubTab",
+   "toggleFav",
+   "updateStats"
+  ],
+  "semua": [
+   "copyFinderUrl",
+   "renderCtfyPresetsFinder",
+   "saveAmProjectToStorage",
+   "switchToolsSubTab"
+  ],
+  "tools": [
+   "applyFilters",
+   "closeModal",
+   "handleAdClick",
+   "handleLinkClick",
+   "hideWAPopup",
+   "initModalSwipeGestures",
+   "markCardMediaFailed",
+   "onMediaImageLoaded",
+   "openModalByCode",
+   "renderAll",
+   "renderFeatured",
+   "resetFilters",
+   "setModalSlide",
+   "toggleFav"
+  ],
+  "tentang": [
+   "applyFilters",
+   "closeModal",
+   "copyFinderUrl",
+   "handleAdClick",
+   "handleLinkClick",
+   "hideWAPopup",
+   "initModalSwipeGestures",
+   "markCardMediaFailed",
+   "onMediaImageLoaded",
+   "openModalByCode",
+   "renderAll",
+   "renderCtfyPresetsFinder",
+   "renderFeatured",
+   "resetFilters",
+   "saveAmProjectToStorage",
+   "setModalSlide",
+   "switchToolsSubTab",
+   "toggleFav"
+  ]
+ },
+ "warn_unloaded_state_refs": {
+  "platform": [],
+  "semua": [],
+  "tools": [],
+  "tentang": []
+ },
+ "page_modules": {
+  "platform": [
+   "main"
+  ],
+  "semua": [
+   "main",
+   "catalog",
+   "library"
+  ],
+  "tools": [
+   "main",
+   "catalog",
+   "tools"
+  ],
+  "tentang": [
+   "main",
+   "catalog"
+  ]
+ },
+ "css_orig_sha256": "81638a0ebdeb72556926418c8de907bf2b5c6d4a81e8692ea6a5eb28f66b1a40",
+ "meta": {
+  "platform": [
+   "CTFY (imctfy) — Motion Graphic Creator & Creative Resources",
+   "CTFY (imctfy) adalah kreator motion graphic yang membagikan karya, project files, preset, dan creative resources melalui media sosial dan website resmi ctfy.my.id."
+  ],
+  "semua": [
+   "Library Project Files & Preset | CTFY (imctfy)",
+   "Jelajahi library project files, preset Alight Motion, template, dan creative resources gratis oleh CTFY (imctfy) di ctfy.my.id."
+  ],
+  "tools": [
+   "Koleksi Tools Kreator Motion | CTFY (imctfy)",
+   "Koleksi tools client-side untuk kreator motion graphic: TikTok Video Analyzer dan Project Link Finder oleh CTFY (imctfy)."
+  ],
+  "tentang": [
+   "Tentang CTFY (imctfy) — Motion Graphic Creator",
+   "Mengenal CTFY (imctfy), kreator motion graphic yang membagikan project files, preset, dan creative resources melalui website resmi ctfy.my.id."
+  ]
+ },
+ "modules_sizes": {
+  "main": 43094,
+  "catalog": 19548,
+  "library": 99209,
+  "tools": 123153
+ }
+}

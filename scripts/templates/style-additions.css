@@ -1,0 +1,39 @@
+
+/* ==========================================================================
+   TAMBAHAN REFACTOR (bukan bagian CSS asli) — dicatat di FINAL_REPORT.md
+   ========================================================================== */
+a.desktop-nav-btn, a.nav-item { text-decoration: none; }
+a.nav-item { text-align: center; }
+.skip-link {
+    position: absolute; left: 8px; top: -48px; z-index: 10000;
+    padding: 10px 14px; border-radius: 8px; font-weight: 600;
+    background: var(--accent, #B85D3B); color: #fff;
+}
+.skip-link:focus { top: 8px; }
+.seo-intro { color: var(--text-secondary, inherit); font-size: 0.92rem; line-height: 1.6; margin: 0 0 14px; max-width: 70ch; }
+
+/* --- Logo header = favicon.svg (sebelumnya kotak CSS gelap dengan huruf "L") --- */
+img.logo-mark { width: 30px; height: 30px; background: none; border: 0; border-radius: 7px; object-fit: contain; }
+img.logo-mark::before, img.logo-mark::after { content: none; }
+[data-theme="dark"] img.logo-mark { background: none; }
+
+/* --- Dukungan/donasi dipisah dari navbar umum (mobile): navbar 4 tab + tombol Dukung melayang terpisah --- */
+@media (max-width: 767px) {
+    .bottom-nav { grid-template-columns: repeat(4, 1fr); }
+    .header-support-btn { display: none; }
+    .floating-support {
+        display: inline-flex; align-items: center; justify-content: center;
+        position: fixed; right: 14px; bottom: calc(var(--mobile-nav-h) + env(safe-area-inset-bottom) + 14px);
+        width: 52px; height: 52px; border-radius: 50%; border: 0; cursor: pointer; z-index: 121;
+        background: var(--accent); color: #fff; font-size: 1.15rem; box-shadow: var(--shadow-lg);
+        transition: transform var(--t-fast);
+    }
+    .floating-support:active { transform: scale(0.93); }
+}
+
+/* --- Transisi antar-halaman halus (progressive enhancement; header & dock tetap diam) --- */
+@media (prefers-reduced-motion: no-preference) {
+    @view-transition { navigation: auto; }
+    .header { view-transition-name: site-header; }
+    .bottom-dock-container { view-transition-name: site-dock; }
+}

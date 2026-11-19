@@ -1,0 +1,26 @@
+{
+  "name": "CTFY (imctfy) — Motion Graphic Creator & Creative Resources",
+  "short_name": "CTFY",
+  "description": "CTFY (imctfy) adalah kreator motion graphic yang membagikan karya, project files, preset, dan creative resources melalui media sosial dan website resmi ctfy.my.id.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#F3F0E8",
+  "theme_color": "#B85D3B",
+  "lang": "id",
+  "icons": [
+    {
+      "src": "/assets/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
