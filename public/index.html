@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <script src="https://quge5.com/88/tag.min.js" data-zone="276031" async data-cfasync="false"></script>
+    <meta name="monetag" content="f613db93a5a8a6746f391af85d6f451c">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <meta name="author" content="CTFY (imctfy)" />
+    <title>CTFY (imctfy) — Motion Graphic Creator &amp; Creative Resources</title>
+    <meta name="description" content="CTFY (imctfy) adalah kreator motion graphic yang membagikan karya, project files, preset, dan creative resources melalui media sosial dan website resmi ctfy.my.id." />
+    <meta name="theme-color" content="#F3F0E8" id="themeColorMeta" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta property="og:title" content="CTFY (imctfy) — Motion Graphic Creator &amp; Creative Resources" />
+    <meta property="og:description" content="CTFY (imctfy) adalah kreator motion graphic yang membagikan karya, project files, preset, dan creative resources melalui media sosial dan website resmi ctfy.my.id." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://ctfy.my.id/assets/images/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="CTFY (imctfy) — Motion Graphic Creator &amp; Creative Resources" />
+    <meta property="og:url" content="https://ctfy.my.id/" />
+    <meta property="og:site_name" content="CTFY" />
+    <meta property="og:locale" content="id_ID" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CTFY (imctfy) — Motion Graphic Creator &amp; Creative Resources" />
+    <meta name="twitter:description" content="CTFY (imctfy) adalah kreator motion graphic yang membagikan karya, project files, preset, dan creative resources melalui media sosial dan website resmi ctfy.my.id." />
+    <meta name="twitter:image" content="https://ctfy.my.id/assets/images/og-image.png" />
+    <link rel="canonical" href="https://ctfy.my.id/" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <script>
+        (function () {
+            try {
+                if (localStorage.getItem('ctfy_theme') === 'dark') {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                    var meta = document.getElementById('themeColorMeta');
+                    if (meta) meta.setAttribute('content', '#191917');
+                }
+            } catch (e) {}
+        })();
+    </script>
+    <script>
+(function () {
+    try {
+        var targetHost = 'ctfy.my.id';
+        var h = (window.location.hostname || '').toLowerCase();
+        var p = window.location.protocol;
+        var lan = /^192\.168\.\d+\.\d+$/.test(h) || /^10\.\d+\.\d+\.\d+$/.test(h) || /^172\.(1[6-9]|2\d|3[01])\.\d+\.\d+$/.test(h);
+        var local = h === 'localhost' || h === '127.0.0.1' || h === '0.0.0.0' || h === '::1' || /\.(local|internal)$/.test(h) || lan || p === 'file:';
+        // .workers.dev / .pages.dev dikecualikan agar preview deployment bisa diuji (perubahan tercatat: K-T05)
+        var preview = /\.(run\.app|google\.com|googleusercontent\.com|workers\.dev|pages\.dev)$/.test(h);
+        if (local || preview) return;
+        if (h !== targetHost || p !== 'https:') {
+            var u = new URL(window.location.href);
+            u.protocol = 'https:';
+            u.hostname = targetHost;
+            u.port = '';
+            window.location.replace(u.toString());
+        }
+    } catch (err) {
+        console.warn('Canonical domain redirect check:', err);
+    }
+})();
+    </script>
+    <script>
+/* Alihkan URL lama (SPA ?tab=, ?code=, ?tool=, ?p=, #hash, /library/KODE, dst.) ke clean URL baru. */
+function ctfyLegacyTarget(pathname, search, hash) {
+    var PAGES = { platform: '/', semua: '/library', tools: '/tools', tentang: '/tentang' };
+    function canon(t) {
+        t = String(t || '').toLowerCase().trim();
+        if (/^(semua|asset|aset|library|presets)$/.test(t)) return 'semua';
+        if (/^(tools|alat|analyzer)$/.test(t)) return 'tools';
+        if (/^(tentang|about)$/.test(t)) return 'tentang';
+        return 'platform';
+    }
+    function sub(s) {
+        s = String(s || '').toLowerCase();
+        if (/^(finder|link-finder|tiktok-finder)$/.test(s)) return 'finder';
+        if (/^(analyzer|video-analyzer)$/.test(s)) return 'analyzer';
+        return null;
+    }
+    function dec(s) { try { return decodeURIComponent(s); } catch (e) { return s; } }
+    var path = String(pathname || '/').replace(/\/index\.html$/i, '');
+    if (path.length > 1) path = path.replace(/\/+$/, '');
+    if (!path) path = '/';
+    var sp = new URLSearchParams(search || '');
+    var tab = null, code = null, tool = null, support = false, m;
+
+    // 1. Parameter query (?tab=, ?code=, ?tool=, ?p=)
+    var qp = sp.get('p') || sp.get('page'), pTab = null, pSub = null, pCode = null;
+    if (qp) {
+        var pn = (qp.charAt(0) === '/' ? qp : '/' + qp).replace(/\/index\.html$/i, '').replace(/\/+$/, '');
+        if (/^\/(library|semua|presets)$/i.test(pn)) pTab = 'semua';
+        else if (/^\/tools\/(link-finder|finder)$/i.test(pn)) { pTab = 'tools'; pSub = 'finder'; }
+        else if (/^\/tools\/analyzer$/i.test(pn)) { pTab = 'tools'; pSub = 'analyzer'; }
+        else if (pn === '/tools') pTab = 'tools';
+        else if (/^\/(tentang|about)$/i.test(pn)) pTab = 'tentang';
+        else if (/^\/(dukung|support|donasi)$/i.test(pn)) { pTab = 'tentang'; support = true; }
+        else if (pn === '/platform') pTab = 'platform';
+        m = pn.match(/^\/(?:library|semua|presets|platform)\/([^\/?#]+)/i);
+        if (m && m[1] !== 'index.html') pCode = dec(m[1]);
+    }
+    var qTab = sp.get('tab') || pTab;
+    var qCode = sp.get('code') || sp.get('id') || sp.get('c') || pCode;
+    var qSub = sp.get('tool') || sp.get('sub') || sp.get('subTool') || pSub;
+    var from = null;
+    if (qTab || qCode || qSub) {
+        var supp = /^(dukung|support|donasi)$/i.test(String(qTab || '').trim());
+        tab = supp ? 'tentang' : (qTab ? canon(qTab) : (qSub ? 'tools' : (qCode ? 'semua' : 'platform')));
+        support = support || supp;
+        code = qCode ? String(qCode).trim() : null;
+        tool = sub(qSub);
+        from = 'query';
+    }
+    // 2. Hash (#library, #/tools/finder, #code=AM01, #AM01)
+    if (!from) {
+        var hr = String(hash || '').replace(/^#\/?/, '').trim();
+        if (hr && hr !== 'main-content') {
+            var hp = null;
+            if (hr.indexOf('=') !== -1) { try { hp = new URLSearchParams(hr); } catch (e) { hp = null; } }
+            var hTab = hp && (hp.get('tab') || hp.get('page')), hCode = hp && (hp.get('code') || hp.get('id')), hSub = hp && (hp.get('tool') || hp.get('sub'));
+            if (hTab || hCode || hSub) {
+                tab = hTab ? canon(hTab) : (hSub ? 'tools' : 'semua');
+                code = hCode ? String(hCode).trim() : null; tool = sub(hSub); from = 'hash';
+            } else if ((m = hr.match(/^(?:library|platform)\/([^\/?#]+)/i))) { tab = 'semua'; code = dec(m[1]).trim(); from = 'hash'; }
+            else if (/^(library|semua|presets|aset|asset)$/i.test(hr)) { tab = 'semua'; from = 'hash'; }
+            else if (/^(link-finder|finder|tiktok-finder)$/i.test(hr)) { tab = 'tools'; tool = 'finder'; from = 'hash'; }
+            else if (/^(analyzer|video-analyzer)$/i.test(hr)) { tab = 'tools'; tool = 'analyzer'; from = 'hash'; }
+            else if (/^(tools|alat)$/i.test(hr)) { tab = 'tools'; from = 'hash'; }
+            else if (/^(tentang|about)$/i.test(hr)) { tab = 'tentang'; from = 'hash'; }
+            else if (/^(dukung|support|donasi)$/i.test(hr)) { tab = 'tentang'; support = true; from = 'hash'; }
+            else if (/^(platform|home|beranda)$/i.test(hr)) { tab = 'platform'; from = 'hash'; }
+            else if (hr.length >= 2 && hr.indexOf('/') === -1 && hr.indexOf('=') === -1) { tab = 'semua'; code = dec(hr).trim(); from = 'hash'; }
+        }
+    }
+    // 3. Path lama (dipakai oleh 404.html): /library/KODE, /semua, /alat, /about, /dukung, ...
+    if (!from && path !== '/') {
+        if ((m = path.match(/^\/(?:library|semua|presets|platform)\/([^\/?#]+)/i)) && m[1] !== 'index.html') { tab = 'semua'; code = dec(m[1]).trim(); from = 'path'; }
+        else if (/^\/(semua|presets)$/i.test(path)) { tab = 'semua'; from = 'path'; }
+        else if (/^\/(tools|alat)\/(link-finder|finder|tiktok-link-finder|tiktok-finder)/i.test(path)) { tab = 'tools'; tool = 'finder'; from = 'path'; }
+        else if (/^\/(tools|alat)\/(analyzer|video-analyzer)/i.test(path)) { tab = 'tools'; tool = 'analyzer'; from = 'path'; }
+        else if (/^\/(alat|analyzer)$/i.test(path)) { tab = 'tools'; from = 'path'; }
+        else if (/^\/about$/i.test(path)) { tab = 'tentang'; from = 'path'; }
+        else if (/^\/(dukung|support|donasi)$/i.test(path)) { tab = 'tentang'; support = true; from = 'path'; }
+        else if (/^\/(platform|home|beranda)$/i.test(path)) { tab = 'platform'; from = 'path'; }
+    }
+    if (!from) return null;
+    if (code) tab = 'semua';   // modal item hanya ada di halaman Library
+    var qs = new URLSearchParams();
+    if (tab === 'semua' && code) qs.set('code', code);
+    if (tab === 'tools' && tool) qs.set('tool', tool);
+    if (tab === 'tentang' && support) qs.set('support', '1');
+    var q = qs.toString();
+    var target = PAGES[tab] + (q ? '?' + q : '');
+    if (target === path + (search || '')) return null;
+    return target;
+}
+(function () {
+    try {
+        var p = window.location.pathname;
+        if (p !== '/' && p !== '/index.html') return;
+        var t = ctfyLegacyTarget(p, window.location.search, window.location.hash);
+        if (t) window.location.replace(t);
+    } catch (e) {}
+})();
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://ctfy.my.id/#creator",
+      "name": "CTFY",
+      "alternateName": "imctfy",
+      "url": "https://ctfy.my.id/",
+      "description": "CTFY (imctfy) adalah kreator motion graphic yang membuat dan membagikan berbagai karya kreatif melalui media sosial. Melalui website resminya, ctfy.my.id, CTFY membagikan project files, preset, dan berbagai aset kreatif untuk komunitas kreator dan motion designer.",
+      "jobTitle": "Motion Graphic Creator",
+      "mainEntityOfPage": {
+        "@id": "https://ctfy.my.id/#webpage"
+      },
+      "sameAs": [
+        "https://www.tiktok.com/@imctfy",
+        "https://www.instagram.com/imctfy",
+        "https://www.youtube.com/@imctfy"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ctfy.my.id/#website",
+      "name": "CTFY",
+      "alternateName": [
+        "imctfy",
+        "ctfy.my.id"
+      ],
+      "url": "https://ctfy.my.id/",
+      "description": "Website resmi CTFY (imctfy) untuk membagikan project files, preset, dan creative resources motion graphic kepada komunitas kreator dan motion designer.",
+      "inLanguage": "id-ID",
+      "publisher": {
+        "@id": "https://ctfy.my.id/#creator"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ctfy.my.id/#webpage",
+      "url": "https://ctfy.my.id/",
+      "name": "CTFY (imctfy) — Motion Graphic Creator & Creative Resources",
+      "description": "CTFY (imctfy) adalah kreator motion graphic yang membagikan karya, project files, preset, dan creative resources melalui media sosial dan website resmi ctfy.my.id.",
+      "inLanguage": "id-ID",
+      "isPartOf": {
+        "@id": "https://ctfy.my.id/#website"
+      },
+      "about": {
+        "@id": "https://ctfy.my.id/#creator"
+      },
+      "author": {
+        "@id": "https://ctfy.my.id/#creator"
+      },
+      "mainEntity": {
+        "@id": "https://ctfy.my.id/#creator"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://ctfy.my.id/assets/images/og-image.png",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://ctfy.my.id/#app",
+      "name": "CTFY",
+      "alternateName": "CTFYLink",
+      "url": "https://ctfy.my.id/",
+      "description": "Platform resmi CTFY (imctfy) untuk mengakses library project files, preset Alight Motion, template, dan tools inspeksi video untuk kreator motion graphic.",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Web",
+      "inLanguage": "id-ID",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "IDR"
+      },
+      "author": {
+        "@id": "https://ctfy.my.id/#creator"
+      },
+      "publisher": {
+        "@id": "https://ctfy.my.id/#creator"
+      }
+    }
+  ]
+}
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <script defer src="/assets/main.js"></script>
+    <script defer src="/assets/boot.js"></script>
+</head>
+<body data-page="platform">
+    <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a class="logo" id="headerLogo" href="/" aria-label="CTFY Homepage" title="CTFY (imctfy) — Motion Graphic Creator &amp; Creative Resources">
+                    <img class="logo-mark" src="/favicon.svg" width="30" height="30" alt="" decoding="async" />
+                    <span class="logo-text">CTFY</span>
+                </a>
+                <nav class="desktop-nav" aria-label="Navigasi Utama">
+                    <a class="desktop-nav-btn active" href="/" data-tab="platform" aria-current="page">
+                        <i class="fas fa-link"></i><span>Platform Link</span>
+                    </a>
+                    <a class="desktop-nav-btn" href="/library" data-tab="semua">
+                        <i class="fas fa-layer-group"></i><span>Library Asset</span>
+                    </a>
+                    <a class="desktop-nav-btn" href="/tools" data-tab="tools">
+                        <i class="fas fa-screwdriver-wrench"></i><span>Tools</span>
+                    </a>
+                    <a class="desktop-nav-btn" href="/tentang" data-tab="tentang">
+                        <i class="fas fa-circle-info"></i><span>Tentang CTFY</span>
+                    </a>
+                </nav>
+                <div class="header-actions">
+                    <button type="button" id="headerSupportBtn" class="header-support-btn" onclick="toggleSupportPopup(true)" aria-label="Dukung CTFY" title="Dukung CTFY">
+                        <i class="fas fa-heart"></i><span>Dukung</span>
+                    </button>
+                    <button type="button" id="themeToggle" class="icon-btn" aria-label="Ganti tema terang atau gelap" title="Ganti tema"><i class="fas fa-moon"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <div class="container">
+
+            <div class="tab-page active" id="tabPlatform">
+                <div class="platform-hero">
+                    <div class="platform-hero-badge"><i class="fas fa-share-nodes"></i> Official Channels &amp; Links &bull; @imctfy</div>
+                    <h1>Platform Link Resmi</h1>
+                    <p>Website resmi CTFY (imctfy), kreator motion graphic yang membagikan karya kreatif, project files, preset, dan creative resources untuk komunitas kreator dan motion designer.</p>
+                    
+                    <div class="platform-search-bar">
+                        <i class="fas fa-search search-icon" style="color:var(--text-muted);"></i>
+                        <input type="text" id="platformSearchInput" class="search-input" placeholder="Cari platform (TikTok, CapCut, WA, IG, Threads, X, Telegram)...">
+                    </div>
+                    <div class="platform-chips-scroll" id="platformChipsScroll">
+                        <div class="platform-chips-wrapper chips-wrapper" id="platformFilterChips">
+                            <button class="chip active" data-pfilter="all"><i class="fas fa-layer-group"></i> Semua Platform</button>
+                            <button class="chip" data-pfilter="sosmed"><i class="fas fa-camera"></i> Sosmed</button>
+                            <button class="chip" data-pfilter="chat"><i class="fas fa-comments"></i> Chat &amp; Cloud</button>
+                            <button class="chip" data-pfilter="community"><i class="fas fa-users"></i> Komunitas</button>
+                            <button class="chip" data-pfilter="support"><i class="fas fa-heart"></i> Dukungan</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hidden elements for script safety -->
+                <div style="display:none;">
+                    <input type="hidden" id="searchInput" value="">
+                    <span class="num" id="statFiltered">—</span>
+                    <span class="num" id="statCategories">—</span>
+                    <span class="num" id="statTotal">—</span>
+                    <span class="num" id="statDownloads">—</span>
+                </div>
+
+                <div class="platform-grid" id="platformGrid">
+                    <!-- TikTok -->
+                    <div class="platform-card" id="cardTiktok" data-cat="sosmed" style="--card-brand:#fe2c55;--brand-color:#fe2c55;--brand-bg:rgba(254,44,85,0.12);">
+                        <div class="platform-card-header">
+                            <div class="platform-card-left">
+                                <div class="platform-icon-box"><i class="fa-brands fa-tiktok"></i></div>
+                                <div class="platform-title-group">
+                                    <div class="platform-name">TikTok</div>
+                                    <div class="platform-handle">@imctfy</div>
+                                </div>
+                            </div>
+                            <span class="platform-pill"><i class="fas fa-video"></i> Video Tren</span>
+                        </div>
+                        <p class="platform-desc">Video preview preset Alight Motion terpopuler, transisi cinematic, sound viral, dan tutorial kilat.</p>
+                        <div class="platform-card-actions">
+                            <a href="https://www.tiktok.com/@imctfy" target="_blank" rel="noopener noreferrer" class="platform-btn-visit"><i class="fas fa-arrow-up-right-from-square"></i> Buka TikTok</a>
+                            <button type="button" class="platform-btn-copy" onclick="copyPlatformLink('https://www.tiktok.com/@imctfy','TikTok')"><i class="fas fa-copy"></i> Salin</button>
+                        </div>
+                    </div>
+
+                    <!-- CapCut -->
+                    <div class="platform-card" id="cardCapcut" data-cat="sosmed" style="--card-brand:#00c4cc;--brand-color:#00c4cc;--brand-bg:rgba(0,196,204,0.12);">
+                        <div class="platform-card-header">
+                            <div class="platform-card-left">
+                                <div class="platform-icon-box" style="display:flex;align-items:center;justify-content:center;">
+                                    <svg viewBox="80 100 340 310" width="22" height="22" fill="currentColor" style="display:block;" aria-hidden="true">
+                                        <path fill-rule="nonzero" d="M109.095 181.505c2.223-19.532 18.316-34.578 37.955-35.483l167.194-.001a40.612 40.612 0 0130.095 17.427 42.152 42.152 0 016.39 14.915l49.135-24.364a2.185 2.185 0 013.141 1.674v27.628l.001.096a4.571 4.571 0 01-2.837 4.229 177620.936 177620.936 0 00-135.63 67.336l135.324 66.948a4.695 4.695 0 013.142 4.08v27.685a2.266 2.266 0 01-3.613 1.821c-16.12-8.162-32.464-15.854-48.462-24.18a63.503 63.503 0 01-4.282 11.225 40.813 40.813 0 01-26.098 20.135 44.994 44.994 0 01-11.221.919l-155.833.003c-3.51 0-7.04 0-10.53-.266-18.089-2.705-32.049-17.363-33.869-35.565v-26.77a5.935 5.935 0 014.08-4.879c27.791-13.732 55.521-27.587 83.353-41.258a32412.61 32412.61 0 00-84.17-41.748 5.41 5.41 0 01-3.223-4.918c-.042-8.876-.185-17.792-.042-26.689zm30.975.184c-1.674 3.367-.898 7.263-1.041 10.896 30.608 15.12 60.99 30.321 91.536 45.339 30.185-14.963 60.384-29.927 90.596-44.89 0-2.714.123-5.428 0-8.162a10.203 10.203 0 00-10.096-8.734h-.106l-161.565.001a10.082 10.082 0 00-9.345 5.55h.021zm-1.041 135.406c.142 3.673-.654 7.631 1.122 11.039a10.204 10.204 0 009.284 5.405l161.667.002.081-.001c3.618 0 6.961-1.94 8.754-5.081 2.04-3.57 1.102-7.855 1.305-11.773-30.26-14.936-60.48-30.118-90.801-44.89a43915.126 43915.126 0 00-91.432 45.299h.02z"/>
+                                    </svg>
+                                </div>
+                                <div class="platform-title-group">
+                                    <div class="platform-name">CapCut</div>
+                                    <div class="platform-handle">@imctfy</div>
+                                </div>
+                            </div>
+                            <span class="platform-pill"><i class="fas fa-scissors"></i> Template Video</span>
+                        </div>
+                        <p class="platform-desc">Template video CapCut siap pakai, preset transisi ritmik, efek visual terkini, dan project sound by @imctfy.</p>
+                        <div class="platform-card-actions">
+                            <a href="https://www.capcut.com/@imctfy" target="_blank" rel="noopener noreferrer" class="platform-btn-visit"><i class="fas fa-arrow-up-right-from-square"></i> Buka CapCut</a>
+                            <button type="button" class="platform-btn-copy" onclick="copyPlatformLink('https://www.capcut.com/@imctfy','CapCut')"><i class="fas fa-copy"></i> Salin</button>
+                        </div>
+                    </div>
+
+                    <!-- Saluran WhatsApp -->
+                    <div class="platform-card" id="cardWhatsappChannel" data-cat="chat" style="--card-brand:#25d366;--brand-color:#25d366;--brand-bg:rgba(37,211,102,0.12);">
+                        <div class="platform-card-header">
+                            <div class="platform-card-left">
+                                <div class="platform-icon-box"><i class="fa-brands fa-whatsapp"></i></div>
+                                <div class="platform-title-group">
+                                    <div class="platform-name">Saluran WhatsApp</div>
+                                    <div class="platform-handle">Saluran Resmi CTFY</div>
+                                </div>
+                            </div>
+                            <span class="platform-pill"><i class="fas fa-bullhorn"></i> Official</span>
+                        </div>
+                        <p class="platform-desc">Ikuti Saluran WhatsApp resmi untuk notifikasi instan rilis preset baru, update konten Alight Motion, tips editing, dan info eksklusif.</p>
+                        <div class="platform-card-actions">
+                            <a href="https://whatsapp.com/channel/0029Vb7QGwsF1YlZl7PoIM0Z" target="_blank" rel="noopener noreferrer" class="platform-btn-visit"><i class="fas fa-bullhorn"></i> Gabung Saluran</a>
+                            <button type="button" class="platform-btn-copy" onclick="copyPlatformLink('https://whatsapp.com/channel/0029Vb7QGwsF1YlZl7PoIM0Z','Saluran WhatsApp')"><i class="fas fa-copy"></i> Salin</button>
+                        </div>
+                    </div>
+
+                    <!-- WhatsApp Admin -->
+                    <div class="platform-card" id="cardWhatsapp" data-cat="chat" style="--card-brand:#25d366;--brand-color:#25d366;--brand-bg:rgba(37,211,102,0.12);">
+                        <div class="platform-card-header">
+                            <div class="platform-card-left">
+                                <div class="platform-icon-box"><i class="fa-brands fa-whatsapp"></i></div>
+                                <div class="platform-title-group">
+                                    <div class="platform-name">WhatsApp Admin</div>
+                                    <div class="platform-handle">+62 856-4891-6476</div>
+                                </div>
+                            </div>
+                            <span class="platform-pill"><i class="fas fa-bolt"></i> Fast Response</span>
+                        </div>
+                        <p class="platform-desc">Chat langsung dengan admin untuk konsultasi preset, pemesanan project khusus, kendala link, atau pertanyaan lainnya.</p>
+                        <div class="platform-card-actions">
+                            <a href="https://wa.me/6285648916476?text=Halo%20CTFY%2C%20saya%20tertarik%20dengan%20preset%20Alight%20Motion" target="_blank" rel="noopener noreferrer" class="platform-btn-visit"><i class="fas fa-arrow-up-right-from-square"></i> Chat Admin</a>
+                            <button type="button" class="platform-btn-copy" onclick="copyPlatformLink('https://wa.me/6285648916476','WhatsApp Admin')"><i class="fas fa-copy"></i> Salin</button>
+                        </div>
+                    </div>
+
+                    <!-- Instagram -->
+                    <div class="platform-card" id="cardInstagram" data-cat="sosmed" style="--card-brand:#e1306c;--brand-color:#e1306c;--brand-bg:rgba(225,48,108,0.12);">
+                        <div class="platform-card-header">
+                            <div class="platform-card-left">
+                                <div class="platform-icon-box"><i class="fa-brands fa-instagram"></i></div>
+                                <div class="platform-title-group">
+                                    <div class="platform-name">Instagram</div>
+                                    <div class="platform-handle">@imctfy</div>
+                                </div>
+                            </div>
+                            <span class="platform-pill"><i class="fas fa-sparkles"></i> Reels &amp; Story</span>
+                        </div>
+                        <p class="platform-desc">Cuplikan reels preset harian, inspirasi motion design, info update web, dan highlight tips editing.</p>
+                        <div class="platform-card-actions">
+                            <a href="https://www.instagram.com/imctfy" target="_blank" rel="noopener noreferrer" class="platform-btn-visit"><i class="fas fa-arrow-up-right-from-square"></i> Buka Instagram</a>
+                            <button type="button" class="platform-btn-copy" onclick="copyPlatformLink('https://www.instagram.com/imctfy','Instagram')"><i class="fas fa-copy"></i> Salin</button>
+                        </div>
+                    </div>
+
+                    <!-- Threads -->
+                    <div class="platform-card" id="cardThreads" data-cat="sosmed" style="--card-brand:#18181b;--brand-color:#18181b;--brand-bg:rgba(24,24,27,0.08);">
+                        <div class="platform-card-header">
+                            <div class="platform-card-left">
+                                <div class="platform-icon-box"><i class="fa-brands fa-threads"></i></div>
+                                <div class="platform-title-group">
+                                    <div class="platform-name">Threads</div>
+                                    <div class="platform-handle">@imctfy</div>
+                                </div>
+                            </div>
+                            <span class="platform-pill"><i class="fas fa-comment-dots"></i> Diskusi</span>
+                        </div>
+                        <p class="platform-desc">Ruang obrolan santai seputar workflow editing AM, tanya jawab preset, dan interaksi sesama kreator.</p>
+                        <div class="platform-card-actions">
+                            <a href="https://www.threads.net/@imctfy" target="_blank" rel="noopener noreferrer" class="platform-btn-visit"><i class="fas fa-arrow-up-right-from-square"></i> Buka Threads</a>
+                            <button type="button" class="platform-btn-copy" onclick="copyPlatformLink('https://www.threads.net/@imctfy','Threads')"><i class="fas fa-copy"></i> Salin</button>
+                        </div>
+                    </div>
+
+                    <!-- X (Twitter) -->
+                    <div class="platform-card" id="cardTwitter" data-cat="sosmed" style="--card-brand:#0f1419;--brand-color:#0f1419;--brand-bg:rgba(15,20,25,0.08);">
+                        <div class="platform-card-header">
+                            <div class="platform-card-left">
+                                <div class="platform-icon-box"><i class="fa-brands fa-x-twitter"></i></div>
+                                <div class="platform-title-group">
+                                    <div class="platform-name">X (Twitter)</div>
+                                    <div class="platform-handle">@imctfy</div>
+                                </div>
+                            </div>
+                            <span class="platform-pill"><i class="fas fa-hashtag"></i> Thread &amp; Info</span>
+                        </div>
+                        <p class="platform-desc">Thread teknis editing Alight Motion, announcement fitur dan aset baru, serta polling aset berikutnya.</p>
+                        <div class="platform-card-actions">
+                            <a href="https://x.com/imctfy" target="_blank" rel="noopener noreferrer" class="platform-btn-visit"><i class="fas fa-arrow-up-right-from-square"></i> Buka X</a>
+                            <button type="button" class="platform-btn-copy" onclick="copyPlatformLink('https://x.com/imctfy','X (Twitter)')"><i class="fas fa-copy"></i> Salin</button>
+                        </div>
+                    </div>
+
+                    <!-- Telegram -->
+                    <div class="platform-card" id="cardTelegram" data-cat="chat" style="--card-brand:#229ed9;--brand-color:#229ed9;--brand-bg:rgba(34,158,217,0.12);">
+                        <div class="platform-card-header">
+                            <div class="platform-card-left">
+                                <div class="platform-icon-box"><i class="fa-brands fa-telegram"></i></div>
+                                <div class="platform-title-group">
+                                    <div class="platform-name">Telegram</div>
+                                    <div class="platform-handle">Kanal &amp; Cloud File</div>
+                                </div>
+                            </div>
+                            <span class="platform-pill"><i class="fas fa-cloud-arrow-down"></i> Direct XML</span>
+                        </div>
+                        <p class="platform-desc">Unduh langsung file XML mentah, pack sound effect (SFX) kualitas tinggi, dan backup arsip tanpa batas.</p>
+                        <div class="platform-card-actions">
+                            <a href="https://t.me/imctfy" target="_blank" rel="noopener noreferrer" class="platform-btn-visit"><i class="fas fa-arrow-up-right-from-square"></i> Buka Telegram</a>
+                            <button type="button" class="platform-btn-copy" onclick="copyPlatformLink('https://t.me/imctfy','Telegram')"><i class="fas fa-copy"></i> Salin</button>
+                        </div>
+                    </div>
+
+                    <!-- YouTube -->
+                    <div class="platform-card" id="cardYoutube" data-cat="sosmed" style="--card-brand:#ef4444;--brand-color:#ef4444;--brand-bg:rgba(239,68,68,0.12);">
+                        <div class="platform-card-header">
+                            <div class="platform-card-left">
+                                <div class="platform-icon-box"><i class="fa-brands fa-youtube"></i></div>
+                                <div class="platform-title-group">
+                                    <div class="platform-name">YouTube</div>
+                                    <div class="platform-handle">@imctfy</div>
+                                </div>
+                            </div>
+                            <span class="platform-pill"><i class="fas fa-play"></i> Tutorial Lengkap</span>
+                        </div>
+                        <p class="platform-desc">Tutorial mendalam Alight Motion, breakdown keyframe, cara pasang preset, dan showcase video sinematik.</p>
+                        <div class="platform-card-actions">
+                            <a href="https://www.youtube.com/@imctfy" target="_blank" rel="noopener noreferrer" class="platform-btn-visit"><i class="fas fa-arrow-up-right-from-square"></i> Buka YouTube</a>
+                            <button type="button" class="platform-btn-copy" onclick="copyPlatformLink('https://www.youtube.com/@imctfy','YouTube')"><i class="fas fa-copy"></i> Salin</button>
+                        </div>
+                    </div>
+
+                    <!-- Discord -->
+                    <div class="platform-card" id="cardDiscord" data-cat="community" style="--card-brand:#5865f2;--brand-color:#5865f2;--brand-bg:rgba(88,101,242,0.12);">
+                        <div class="platform-card-header">
+                            <div class="platform-card-left">
+                                <div class="platform-icon-box"><i class="fa-brands fa-discord"></i></div>
+                                <div class="platform-title-group">
+                                    <div class="platform-name">Discord</div>
+                                    <div class="platform-handle">Komunitas Editor CTFY</div>
+                                </div>
+                            </div>
+                            <span class="platform-pill"><i class="fas fa-users"></i> Komunitas</span>
+                        </div>
+                        <p class="platform-desc">Ruang kumpul sesama editor mobile &amp; PC, sharing preset karya kamu, review editing, dan voice room.</p>
+                        <div class="platform-card-actions">
+                            <span class="platform-btn-visit is-disabled" role="link" aria-disabled="true"><i class="fas fa-clock"></i> Segera hadir</span>
+                        </div>
+                    </div>
+
+                    <!-- Sociabuzz -->
+                    <div class="platform-card" id="cardSociabuzz" data-cat="support" style="--card-brand:#f59e0b;--brand-color:#f59e0b;--brand-bg:rgba(245,158,11,0.12);">
+                        <div class="platform-card-header">
+                            <div class="platform-card-left">
+                                <div class="platform-icon-box"><i class="fas fa-mug-hot"></i></div>
+                                <div class="platform-title-group">
+                                    <div class="platform-name">Sociabuzz</div>
+                                    <div class="platform-handle">sociabuzz.com/ctfy</div>
+                                </div>
+                            </div>
+                            <span class="platform-pill"><i class="fas fa-heart"></i> Dukung Kreator</span>
+                        </div>
+                        <p class="platform-desc">Traktir secangkir kopi untuk mendukung operasional server web dan menjaga seluruh aset tetap gratis.</p>
+                        <div class="platform-card-actions">
+                            <a href="https://sociabuzz.com/ctfy" target="_blank" rel="noopener noreferrer" class="platform-btn-visit"><i class="fas fa-arrow-up-right-from-square"></i> Dukung via Sociabuzz</a>
+                            <button type="button" class="platform-btn-copy" onclick="copyPlatformLink('https://sociabuzz.com/ctfy','Sociabuzz')"><i class="fas fa-copy"></i> Salin</button>
+                        </div>
+                    </div>
+
+                    <!-- Email & Kontak -->
+                    <div class="platform-card" id="cardEmail" data-cat="support" style="--card-brand:#B85D3B;--brand-color:#B85D3B;--brand-bg:rgba(184,93,59,0.12);">
+                        <div class="platform-card-header">
+                            <div class="platform-card-left">
+                                <div class="platform-icon-box"><i class="fas fa-envelope"></i></div>
+                                <div class="platform-title-group">
+                                    <div class="platform-name">Email Resmi</div>
+                                    <div class="platform-handle">myxrin2748@gmail.com</div>
+                                </div>
+                            </div>
+                            <span class="platform-pill"><i class="fas fa-briefcase"></i> Bisnis &amp; Kontak</span>
+                        </div>
+                        <p class="platform-desc">Hubungi kami untuk kerjasama bisnis, sponsorship, pertanyaan komersial, atau pelaporan link rusak.</p>
+                        <div class="platform-card-actions">
+                            <a href="mailto:myxrin2748@gmail.com" class="platform-btn-visit"><i class="fas fa-paper-plane"></i> Kirim Email</a>
+                            <button type="button" class="platform-btn-copy" onclick="copyPlatformLink('myxrin2748@gmail.com','Email')"><i class="fas fa-copy"></i> Salin</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- STREAMLINED COMPACT FOOTER -->
+    <footer class="footer" id="mainFooter">
+        <div class="container footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand-block">
+                    <span class="footer-brand">CTFY</span>
+                    <span class="footer-tagline">Motion Graphic Creator &amp; Creative Resources &bull; @imctfy</span>
+                </div>
+                <div class="footer-social" aria-label="Media Sosial Resmi CTFY">
+                    <a href="https://www.tiktok.com/@imctfy" target="_blank" rel="noopener noreferrer" aria-label="TikTok @imctfy" title="TikTok @imctfy"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.capcut.com/@imctfy" target="_blank" rel="noopener noreferrer" aria-label="CapCut @imctfy" title="CapCut @imctfy">
+                        <svg viewBox="80 100 340 310" width="15" height="15" fill="currentColor" style="display:inline-block;vertical-align:middle;" aria-hidden="true">
+                            <path fill-rule="nonzero" d="M109.095 181.505c2.223-19.532 18.316-34.578 37.955-35.483l167.194-.001a40.612 40.612 0 0130.095 17.427 42.152 42.152 0 016.39 14.915l49.135-24.364a2.185 2.185 0 013.141 1.674v27.628l.001.096a4.571 4.571 0 01-2.837 4.229 177620.936 177620.936 0 00-135.63 67.336l135.324 66.948a4.695 4.695 0 013.142 4.08v27.685a2.266 2.266 0 01-3.613 1.821c-16.12-8.162-32.464-15.854-48.462-24.18a63.503 63.503 0 01-4.282 11.225 40.813 40.813 0 01-26.098 20.135 44.994 44.994 0 01-11.221.919l-155.833.003c-3.51 0-7.04 0-10.53-.266-18.089-2.705-32.049-17.363-33.869-35.565v-26.77a5.935 5.935 0 014.08-4.879c27.791-13.732 55.521-27.587 83.353-41.258a32412.61 32412.61 0 00-84.17-41.748 5.41 5.41 0 01-3.223-4.918c-.042-8.876-.185-17.792-.042-26.689zm30.975.184c-1.674 3.367-.898 7.263-1.041 10.896 30.608 15.12 60.99 30.321 91.536 45.339 30.185-14.963 60.384-29.927 90.596-44.89 0-2.714.123-5.428 0-8.162a10.203 10.203 0 00-10.096-8.734h-.106l-161.565.001a10.082 10.082 0 00-9.345 5.55h.021zm-1.041 135.406c.142 3.673-.654 7.631 1.122 11.039a10.204 10.204 0 009.284 5.405l161.667.002.081-.001c3.618 0 6.961-1.94 8.754-5.081 2.04-3.57 1.102-7.855 1.305-11.773-30.26-14.936-60.48-30.118-90.801-44.89a43915.126 43915.126 0 00-91.432 45.299h.02z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/imctfy" target="_blank" rel="noopener noreferrer" aria-label="Instagram @imctfy" title="Instagram @imctfy"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@imctfy" target="_blank" rel="noopener noreferrer" aria-label="YouTube @imctfy" title="YouTube @imctfy"><i class="fab fa-youtube"></i></a>
+                    <a href="https://whatsapp.com/channel/0029Vb7QGwsF1YlZl7PoIM0Z" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Channel CTFY" title="WhatsApp Channel"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:myxrin2748@gmail.com" aria-label="Email CTFY" title="Hubungi Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-nav-row">
+                <a href="/"><i class="fas fa-link"></i> Platform</a>
+                <a href="/library"><i class="fas fa-layer-group"></i> Library</a>
+                <a href="/tools"><i class="fas fa-screwdriver-wrench"></i> Tools</a>
+                <a href="/tentang"><i class="fas fa-circle-info"></i> Tentang</a>
+                <button type="button" onclick="toggleSupportPopup(true)"><i class="fas fa-heart"></i> Dukung</button>
+                <a href="https://wa.me/6285648916476" target="_blank" rel="noopener noreferrer"><i class="fas fa-headset"></i> Kontak Admin</a>
+                <a href="mailto:myxrin2748@gmail.com?subject=Laporan%20Link%20Rusak"><i class="fas fa-wrench"></i> Lapor Link</a>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copy">&copy; 2026 CTFY (@imctfy) &bull; <a href="https://ctfy.my.id/" style="color:inherit;text-decoration:none;">ctfy.my.id</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING DOCK CONTAINER: NAVIGATION + DONATION -->
+    <div class="bottom-dock-container" id="bottomDockContainer">
+        <nav class="bottom-nav" id="bottomNav" aria-label="Navigasi Utama">
+            <a class="nav-item active" href="/" data-tab="platform" id="navItemPlatform" aria-label="Platform" aria-current="page">
+                <i class="fas fa-house"></i>
+                <span>Platform</span>
+            </a>
+            <a class="nav-item" href="/library" data-tab="semua" id="navItemLibrary" aria-label="Library">
+                <i class="fas fa-layer-group"></i>
+                <span>Library</span>
+            </a>
+            <a class="nav-item" href="/tools" data-tab="tools" id="navItemTools" aria-label="Tools">
+                <i class="fas fa-screwdriver-wrench"></i>
+                <span>Tools</span>
+            </a>
+            <a class="nav-item" href="/tentang" data-tab="tentang" id="navItemTentang" aria-label="Tentang">
+                <i class="fas fa-circle-info"></i>
+                <span>Tentang</span>
+            </a>
+        </nav>
+        <button type="button" class="floating-support" id="floatingSupportBtn" aria-label="Dukung CTFY" title="Dukung CTFY">
+            <i class="fas fa-heart"></i>
+        </button>
+    </div>
+
+    <!-- MODERN SUPPORT POPUP (MODAL DUKUNGAN CTFY) -->
+    <div class="support-popup-overlay" id="supportPopup" role="dialog" aria-modal="true" aria-labelledby="supportPopupTitle">
+        <div class="support-popup">
+            <!-- Header Section with Badge & Close Button -->
+            <div class="support-popup-header">
+                <div class="support-popup-header-top">
+                    <div class="support-badge">
+                        <i class="fas fa-heart"></i>
+                        <span>Apresiasi Kreator</span>
+                    </div>
+                    <button type="button" class="support-close-btn" id="closeSupportPopup" aria-label="Tutup popup dukungan">
+                        <i class="fas fa-xmark"></i>
+                    </button>
+                </div>
+                <h3 id="supportPopupTitle" class="support-popup-title">Dukung Kreator CTFY</h3>
+                <p class="support-popup-desc">Semua preset, asset, dan tools di CTFY dapat diakses 100% gratis. Jika karya ini mempermudah editing-mu, donasi sukarela sangat membantu biaya operasional server &amp; pembuatan karya baru.</p>
+            </div>
+
+            <!-- Body Section with Payment Methods -->
+            <div class="support-popup-body">
+                <!-- Method 1: SociaBuzz (QRIS & All E-Wallets) -->
+                <div class="support-method-card sociabuzz-card">
+                    <div class="support-method-head">
+                        <div class="support-method-icon-box sociabuzz">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="support-method-meta">
+                            <div class="support-method-name">SociaBuzz Trakteer</div>
+                            <div class="support-method-sub">QRIS, E-Wallet &amp; Transfer Bank</div>
+                        </div>
+                        <span class="support-method-pill instant">Instan</span>
+                    </div>
+
+                    <div class="support-pay-tags">
+                        <span class="pay-tag"><i class="fas fa-qrcode"></i> QRIS</span>
+                        <span class="pay-tag">GoPay</span>
+                        <span class="pay-tag">OVO</span>
+                        <span class="pay-tag">ShopeePay</span>
+                        <span class="pay-tag">Bank Transfer</span>
+                    </div>
+
+                    <a href="https://sociabuzz.com/ctfy" target="_blank" rel="noopener noreferrer" class="support-action-btn sociabuzz" id="sociabuzzBtn">
+                        <span>Dukung via SociaBuzz</span>
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <!-- Method 2: DANA (Transfer Langsung) -->
+                <div class="support-method-card dana-card">
+                    <div class="support-method-head">
+                        <div class="support-method-icon-box dana">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <div class="support-method-meta">
+                            <div class="support-method-name">DANA Langsung</div>
+                            <div class="support-method-sub">Transfer cepat tanpa potongan perantara</div>
+                        </div>
+                        <span class="support-method-pill fee-free">Bebas Biaya</span>
+                    </div>
+
+                    <div class="support-number-box">
+                        <div class="support-number-info">
+                            <span class="support-number-label">Nomor Akun DANA</span>
+                            <span class="support-number-val">0856-4891-6476</span>
+                        </div>
+                        <button type="button" class="support-copy-btn" id="danaCopyBtn" onclick="copyDanaNumber(event)" aria-label="Salin nomor akun DANA">
+                            <i class="fas fa-copy"></i>
+                            <span>Salin</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Section -->
+            <div class="support-popup-footer">
+                <i class="fas fa-shield-heart"></i>
+                <span>Donasi bersifat sukarela tanpa paksaan. Terima kasih banyak telah mendukung komunitas CTFY!</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+# CONTOH SAJA — tidak dibaca Cloudflare Pages. Pakai hanya bila suatu hari pindah ke Workers Static Assets:
+# ganti nama file menjadi wrangler.toml dan samakan `name` dengan nama Worker di dashboard.
+name = "ctfylink"
+compatibility_date = "2026-11-18"
+
+[assets]
+directory = "./public"
+not_found_handling = "404-page"
